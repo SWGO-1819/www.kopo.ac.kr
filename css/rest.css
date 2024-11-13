@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*
+@font-face{
+    font-family:'NanumBarunGothic';
+    src: url('../css/fonts/NanumBarunGothic.eot');
+    src: local('NanumBarunGothic'), url('../css/fonts/NanumBarunGothic.woff') format('woff');
+}
+*/
+@font-face {
+	font-family:'Nanum Gothic';
+	font-style:normal;
+	font-weight:400;
+	src:url('../css/fonts/NanumGothic-Regular.eot');
+	src:url('../css/fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/NanumGothic-Regular.woff') format('woff');
+}
+@font-face {
+	font-family:'Nanum Gothic';
+	font-style:normal;
+	font-weight:700;
+	src:url('../css/fonts/NanumGothic-Bold.eot');
+	src:url('../css/fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/NanumGothic-Bold.woff') format('woff');
+}
+@font-face {
+	font-family:'BMDOHYEON';
+	font-style:normal;
+	font-weight:400;
+	src:url('../css/fonts/BMDOHYEON.eot');
+	src:url('../css/fonts/BMDOHYEON.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/BMDOHYEON.woff') format('woff');
+}
+
+/* 여백 초기화 */
+* {margin:0;padding:0}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; border:0; padding:0;}
+
+/* 시멘틱 요소 블록화 */
+header, aside, article, footer, main, hgroup, menu, nav, section, details, figure, figcaption {display:block}
+
+/* 폰트 초기화 */
+/* 맑은고딕 body, input, textarea, select, button, table {color:#666666;font-style:normal;font-size:16px;line-height:1.250em;font-family:"NanumBarunGothic", "나눔 고딕", "Nanum Gothic", "나눔고딕", "NanumGothic", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum",  helvetica, sans-serif;letter-spacing:0em} */
+html{ font-size:16px;}
+body, input, textarea, select, button, table {color:#666666;font-style:normal;font-size:16px;line-height:1.250em;font-family:"Nanum Gothic", "나눔 고딕", "Malgun Gothic", "맑은 고딕", "돋움", "Dotum",  helvetica, sans-serif;letter-spacing:0em}
+@media all and (max-width:620px) {
+	body, input, textarea, select, button, table { font-size: 14px; }
+}
+@media all and (max-width:480px) {
+	body, input, textarea, select, button, table { font-size: 12px; }
+}
+
+/* 링크 초기화 */
+a {color:#595959; text-decoration:none}
+.sub a:hover {color:#494949;text-decoration:underline}
+
+/* 제목 폰트 초기화 */
+h1, h2, h3, h4, h5, h6 {font-size:12px; font-weight:normal}
+
+/* 블릿 기호 초기화 */
+ul, li, ol {list-style:none}
+
+/* 테두리 초기화 */
+img, fieldset {border:none}
+
+/* 블라인드 효과 */
+.blind {width:1px;height:1px;left:0;top:0;font-size:0;line-height:0;text-indent:-1000px;overflow:hidden;position:absolute;clip:rect(1px,1px,1px,1px);}
+
+legend, hr, caption {position:absolute; top:0; left:-1000px;text-indent:-1000px; line-height:0; width:1px;height:1px;font-size:0;}
+
+/* 텍스트 숨김 */
+.screen_out{display:block;overflow:hidden;position:absolute;left:-1000px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-1000px;}
+.screen_hide{position:absolute;top:0;left:-1000px;}
+
+
+* {word-break:break-all}
+
+/* 테이블 초기화 */
+table {padding:0; border-spacing:0px; border:0;}
