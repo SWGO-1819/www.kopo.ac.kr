@@ -1,0 +1,5120 @@
+<!DOCTYPE html>
+
+<html lang="ko" >
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+
+<meta name="author" content="폴리텍대학" />
+
+<meta name="description" content="폴리텍대학 홈페이지입니다." />
+
+<meta name="keywords" content="폴리텍대학" />
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" /> 
+
+<link rel="stylesheet" media="all" href="/css/reset.css?ver=3.2.5.10" />
+
+<link rel="stylesheet" href="/assets2021/css/new_common.css?v=3.2.5.10">
+
+		<link rel="stylesheet" href="/assets2021/css/new_main.css?v=3.2.5.10">
+
+		<script type="text/javascript" src="/assets2021/lib/jquery/jquery.min.js"></script>
+
+		<script type="text/javascript" src="/assets2021/lib/pageable/pageable.min.js"></script>
+
+		<link rel="stylesheet" href="/assets2021/lib/slick/slick.css">
+
+		<script type="text/javascript" src="/assets2021/lib/slick/slick.min.js"></script>
+
+		<link rel="stylesheet" media="all" href="/css/publish.css?ver=3.2.5.10" />
+
+	<script> 
+
+	var contextPath = "";
+
+	var kopoBaseUrl = contextPath + '';
+
+	var baseUrl = kopoBaseUrl;
+
+	var cpNm = '';
+
+	var cpLang = 'ko';
+
+</script>
+
+
+
+<script src="/js/kopo/common.js?ver=2.{jsTimeStamp}"></script>
+
+<script src="/js/search/search.js?ver=2"></script>
+
+<!--<script src="/js/kopo/jquery.rwdImageMaps.min.js" type="application/javascript"></script>-->
+
+<script type="text/javascript" src="/assets2021/lib/jquery/jquery.rwdImageMaps.min.js"></script>
+
+
+
+<!-- script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script -->
+
+<!--[if lt IE 9]>
+
+	<script src="/js/kopo/selectivizr-min.js"></script>
+
+	<script src="/js/kopo/html5shiv.min.js"></script>
+
+	<script src="/js/kopo/respond.min.js"></script>
+
+<![endif]-->
+
+<title>한국폴리텍대학</title>
+
+<script src="/js/kopo/jquery.nav.min.js"></script>
+
+<script type="application/ld+json">
+
+{
+
+ "@context": "http://schema.org",
+
+ "@type": "Organization",
+
+ "name": "한국폴리텍대학",
+
+ "url": "https://www.kopo.ac.kr",
+
+ "sameAs": [
+
+	 "https://blog.naver.com/love_kopo",
+
+	 "http://cafe.naver.com/lovekopo",
+
+	 "https://www.facebook.com/koposns",
+
+	 "https://www.youtube.com/channel/UCrIrj8hjj48Yulj9_oeYApQ",
+
+	 "https://www.instagram.com/korea_polytechnics"
+
+ ]
+
+}
+
+</script>
+
+</head>
+
+<body class="bodyS">
+
+<div class="nav-skip">
+
+	<h2 class="blind">건너뛰기 링크</h2>
+
+	<a class="nav-skip__item" href="#pg-div">한국폴리텍대학본문 바로가기</a><br/>
+
+	<a class="nav-skip__item" href="#kopoMenu">한국폴리텍대학주메뉴 바로가기</a>
+
+</div>
+
+<div class="corp home-wrap">
+
+	<script>
+
+// $(window).load(function(){
+
+// 	$(".goog-te-combo").attr('title', '구글번역 언어선택');
+
+// 	$("#fb-root").find("iframe").each(function(){
+
+// 		var src = $(this).attr("src");
+
+// 		$(this).attr('title', 'facebook');
+
+// 	});
+
+// });
+
+</script>
+
+<form name="searchTop" id="searchTop" method="post" action="/search.do">
+
+	<input type="hidden" name="query" />
+
+	<input type="hidden" name="turnpage" value="search" />
+
+	<input type="hidden" name="areaType" />
+
+	<input type="hidden" name="degreeType" />
+
+	<input type="hidden" name="mainsearch" />
+
+</form>
+
+
+
+<header>
+
+	<div class="prefix">
+
+		<div class="for-mobile">
+
+			<a href="javascript:showAllCampus();" title="폴리텍대학 캠퍼스 목록 표시">전국 캠퍼스 안내</a>
+
+		</div>
+
+		</div>
+
+	<div class="suffix">
+
+	<div class="select-language">
+
+			<a href="#" title="언어선택 메뉴 펼치기">
+
+						<span class="icon-flag ko"></span>
+
+						<span class="lang">KO</span>
+
+					</a>
+
+					<ul class="lang-list">
+
+					<li>
+
+							<a href="/index.do" >
+
+							<span class="icon-flag ko"></span>
+
+									<span class="lang">KO</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="/en/index.do" >
+
+							<span class="icon-flag en"></span>
+
+									<span class="lang">EN</span>
+
+								</a>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+		<a href="javascript:void(0);" onclick="mainPopupOpen('.popup01');" class="mainPopCnt" data-cnt="0" title="팝업열기">팝업 0건</a>
+
+		</div>
+
+</header>
+
+
+
+<!-- 전국 캠퍼스 바로가기 :: s -->
+
+<script>
+
+var tlTimer;
+
+var btimer = false;
+
+
+
+function camMover(cam) {
+
+	$('.tooltip').hide();
+
+	$(cam).next().show();
+
+	hide_timer (false);
+
+}
+
+
+
+function camMout() {
+
+	hide_timer (true);
+
+}
+
+
+
+function camToggle(cam) {
+
+	if ($('.tooltip').is(":visible")) {
+
+		$('.tooltip').hide();
+
+	} else { 
+
+		$('.tooltip').hide();
+
+		$(cam).next().show();
+
+	}
+
+}
+
+
+
+function hide_timer(btimer) {
+
+	if (btimer) {
+
+		tlTimer = setTimeout(function(){
+
+			$('.tooltip').hide();
+
+		  }, 1500);
+
+	} else {
+
+		clearTimeout(tlTimer);
+
+		tlTimer = null;
+
+	}
+
+}
+
+</script>
+
+<style>
+
+.main_all_campus .all_campus_body .golink ul {width:159px;}
+
+.main_all_campus .all_campus_body .golink >li:nth-child(1) .tooltip {width:160px;}
+
+.main_all_campus .all_campus_body .golink >li:nth-child(5) .tooltip {width:160px;}
+
+.main_all_campus .area_group .area_box {width:25%;}
+
+.main_all_campus .area_group .area_box:nth-child(1),.main_all_campus .area_group .area_box:nth-child(4) {width:40%;}
+
+.main_all_campus .area_group .area_box:nth-child(3) {width:35%;}
+
+.main_all_campus .area_group .area_box:nth-child(5) {width:33%;}
+
+.main_all_campus .area_group .area_box:nth-child(6) {width:20%;}
+
+
+
+.main_all_campus .all_campus_clr span.cl1  {background: initial; color: #ff0000;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl2  {background: initial; color: #A38300;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl3  {background: initial; color: #FF00FC;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl4  {background: initial; color: #9500ff;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl5  {background: initial; color: #0b5215;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl6  {background: initial; color: #329787;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl7  {background: initial; color: #145279;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl8  {background: initial; color: #fa7411;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl9  {background: initial; color: #118fc2;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl10 {background: initial; color: #2ba600;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+.main_all_campus .all_campus_clr span.cl11 {background: initial; color: #a34a28;display: inline-block;width: 7px;height: 7px;margin-right: 4px;border-radius: 5px;}
+
+
+
+.main_all_campus .area_group .area_box span.cl1  {background: initial; color: #ff0000;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl2  {background: initial; color: #A38300;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl3  {background: initial; color: #FF00FC;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl4  {background: initial; color: #9500ff;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl5  {background: initial; color: #0b5215;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl6  {background: initial; color: #329787;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl7  {background: initial; color: #145279;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl8  {background: initial; color: #fa7411;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl9  {background: initial; color: #118fc2;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl10 {background: initial; color: #2ba600;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+.main_all_campus .area_group .area_box span.cl11 {background: initial; color: #a34a28;display: inline;border-radius: 5px;font-size: inherit;line-height: inherit;text-align: center;margin-left: initial;margin-right: 2px;}
+
+
+
+.main_all_campus .area_group .area_box span.orange {background: url("../images/kopo/all_cam_orange2.png") no-repeat;}
+
+@media all and (max-width:640px) {
+
+	.main_all_campus .area_group {
+
+		width:100%;
+
+		box-sizing:border-box;
+
+		display:flex;
+
+		flex-wrap: wrap;
+
+	}
+
+	.main_all_campus .area_group .area_box,.main_all_campus .area_group .area_box:nth-child(1), .main_all_campus .area_group .area_box:nth-child(4),.main_all_campus .area_group .area_box:nth-child(3), .main_all_campus .area_group .area_box:nth-child(6), .main_all_campus .area_group .area_box:nth-child(5) {
+
+		width:50%;
+
+		padding-bottom:20px;
+
+		min-height:0;
+
+	}
+
+	.main_all_campus .area_group .area_box:nth-child(2) {
+
+		padding:0;
+
+	}
+
+	.main_all_campus .all_campus_body .area_box .area {
+
+		display: block;
+
+		float:none;
+
+	}
+
+}
+
+</style>
+
+<div class="main_all_campus">
+
+	<div class="all_campus_content">
+
+		<div class="gray_bg">
+
+			<div class="tit_row">
+
+				<h3>한국폴리텍대학 전국 캠퍼스 안내</h3>
+
+				<p>캠퍼스명을 선택하시면 해당 홈페이지로 이동합니다.</p>
+
+			</div>
+
+		</div>
+
+			
+
+		<div class="all_campus_body">
+
+			<img class="all_campus_map" alt="한국폴리텍대학 전국 캠퍼스 지도" src="/images/kopo/all_campus_map3.png"/>
+
+<pre class="blind">
+
+ 서울.경기: ①Ⅰ대학(1대학) ②Ⅱ대학(2대학)
+
+ 강원도: ③Ⅲ대학(3대학)
+
+ 충청북도: ④Ⅳ대학(4대학), ■기술대안고교
+
+ 충청남도: ④Ⅳ대학(4대학), ★특성화
+
+ 전라북도: ⑤Ⅴ대학(5대학), ●인재원, ◆신기술교육원
+
+ 전라남도: ⑤Ⅴ대학(5대학)
+
+ 경상북도: ⑥Ⅵ대학(6대학), ★특성화
+
+ 경상남도: ⑦Ⅶ대학(7대학), ★특성화
+
+ 제주도: ①Ⅰ대학(1대학)
+
+</pre>
+
+
+
+			<ul class="golink">
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">서울.경기 : 서울정수캠퍼스, 서울강서캠퍼스, 성남캠퍼스, 융합기술교육원, 인천캠퍼스, 남인천캠퍼스, 화성캠퍼스, 광명융합기술교육원, 반도체융합캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/jungsu/index.do" target="_blank" title="새창">서울정수캠퍼스</a></li>
+
+							<li><a href="/kangseo/index.do" target="_blank" title="새창">서울강서캠퍼스</a></li>
+
+							<li><a href="/seongnam/index.do" target="_blank" title="새창">성남캠퍼스</a></li>
+
+							<li><a href="/ctc/index.do" target="_blank" title="새창">분당융합기술교육원</a></li>
+
+							<li><a href="/incheon/index.do" target="_blank" title="새창">인천캠퍼스</a></li>
+
+							<li><a href="/namincheon/index.do" target="_blank" title="새창">남인천캠퍼스</a></li>
+
+							<li><a href="/hwaseong/index.do" target="_blank" title="새창">화성캠퍼스</a></li>
+
+							<li><a href="/gm/index.do" target="_blank" title="새창">광명융합기술교육원</a></li>
+
+							<li><a href="/semi/index.do" target="_blank" title="새창">반도체융합캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">강원도 : 춘천캠퍼스, 원주캠퍼스, 강릉캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/chuncheon/index.do" target="_blank" title="새창">춘천캠퍼스</a></li>
+
+							<li><a href="/wonju/index.do" target="_blank" title="새창">원주캠퍼스</a></li>
+
+							<li><a href="/gangneung/index.do" target="_blank" title="새창">강릉캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">충청북도 : 청중캠퍼스, 충주캠퍼스, 다솜고등학교</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/cheongju/index.do" target="_blank" title="새창">청주캠퍼스</a></li>
+
+							<li><a href="/chungju/index.do" target="_blank" title="새창">충주캠퍼스</a></li>
+
+							<li><a href="/dasom/index.do" target="_blank" title="새창">다솜고등학교</a></li>
+
+							
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">충청남도 : 대전캠퍼스, 아산캠퍼스, 충남캠퍼스, 바이오캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/daejeon/index.do" target="_blank" title="새창">대전캠퍼스</a></li>
+
+							<li><a href="/asan/index.do" target="_blank" title="새창">아산캠퍼스</a></li>
+
+							<li><a href="/chungnam/index.do" target="_blank" title="새창">충남캠퍼스</a></li>
+
+							<li><a href="/bio/index.do" target="_blank" title="새창">바이오캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">경상북도 : 대구캠퍼스, 남대구캠퍼스, 구미캠퍼스, 포항캠퍼스, 영주캠퍼스, 영남융합기술캠퍼스, 로봇캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/daegu/index.do" target="_blank" title="새창">대구캠퍼스</a></li>
+
+							<li><a href="/namdaegu/index.do" target="_blank" title="새창">남대구캠퍼스</a></li>
+
+							<li><a href="/gumi/index.do" target="_blank" title="새창">구미캠퍼스</a></li>
+
+							<li><a href="/pohang/index.do" target="_blank" title="새창">포항캠퍼스</a></li>
+
+							<li><a href="/yeongju/index.do" target="_blank" title="새창">영주캠퍼스</a></li>
+
+							<li><a href="/yct/index.do" target="_blank" title="새창">영남융합기술캠퍼스</a></li>
+
+							<li><a href="/robot/index.do" target="_blank" title="새창">로봇캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">전라북도 : 전북캠퍼스, 익산캠퍼스, 인재원, 신기술교육원</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							
+
+							<li><a href="/jb/index.do" target="_blank" title="새창">전북캠퍼스</a></li>
+
+							<li><a href="/iksan/index.do" target="_blank" title="새창">익산캠퍼스</a></li>
+
+							<li><a href="/hrd/index.do" target="_blank" title="새창">인재원</a></li>
+
+							<li><a href="/int/" target="_blank" title="새창">신기술교육원</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">경상남도 : 창원캠퍼스, 부산캠퍼스, 울산캠퍼스, 동부산캠퍼스, 진주캠퍼스, 석유화학공정기술교육원, 항공캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/changwon/index.do" target="_blank" title="새창">창원캠퍼스</a></li>
+
+							<li><a href="/busan/index.do" target="_blank" title="새창">부산캠퍼스</a></li>
+
+							<li><a href="/ulsan/index.do" target="_blank" title="새창">울산캠퍼스</a></li>
+
+							<li><a href="/dongbusan/index.do" target="_blank" title="새창">동부산캠퍼스</a></li>
+
+							<li><a href="/jinju/index.do" target="_blank" title="새창">진주캠퍼스</a></li>
+
+							<li><a href="/pptc/index.do" target="_blank" title="새창">석유화학공정기술교육원</a></li>
+
+							<li><a href="/kapc/index.do" target="_blank" title="새창">항공캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">전라남도 : 광주캠퍼스, 전남캠퍼스, 순천캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/gwangju/index.do" target="_blank" title="새창">광주캠퍼스</a></li>
+
+							<li><a href="/jeonnam/index.do" target="_blank" title="새창">전남캠퍼스</a></li>
+
+							<li><a href="/suncheon/index.do" target="_blank" title="새창">순천캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+
+
+				<li>
+
+					<a class="goCampusPop" href="#" onmouseover="camMover(this)" onmouseout="camMout()" onclick="camToggle(this); return false;">
+
+						<span class="blind">제주도 : 제주캠퍼스</span>
+
+					</a>
+
+					<div class="tooltip">
+
+						<span class="pop_row"></span>
+
+						<ul>
+
+							<li><a href="/jeju/index.do" target="_blank" title="새창">제주캠퍼스</a></li>
+
+						</ul>
+
+					</div>
+
+				</li>
+
+			</ul>
+
+			
+
+			<ul class="all_campus_clr">
+
+				<li><span class="cl1">①</span><span class="cl_txt">Ⅰ대학</span></li>
+
+				<li><span class="cl2">②</span><span class="cl_txt">Ⅱ대학</span></li>
+
+				<li><span class="cl3">③</span><span class="cl_txt">Ⅲ대학</span></li>
+
+				<li><span class="cl4">④</span><span class="cl_txt">Ⅳ대학</span></li>
+
+				<li><span class="cl5">⑤</span><span class="cl_txt">Ⅴ대학</span></li>
+
+				<li><span class="cl6">⑥</span><span class="cl_txt">Ⅵ대학</span></li>
+
+				<li><span class="cl7">⑦</span><span class="cl_txt">Ⅶ대학</span></li>
+
+				<li><span class="cl8">★</span><span class="cl_txt">특성화</span></li>
+
+				<li><span class="cl9">●</span><span class="cl_txt">인재원</span></li>
+
+				<li><span class="cl11">◆</span><span class="cl_txt">신기술교육원</span></li>
+
+				<li><span class="cl10">■</span><span class="cl_txt">기술대안고교</span></li>
+
+			</ul>
+
+			
+
+			<div class="area_group" style="font-size: 14px;">
+
+				<div class="area_box">
+
+					<h4 class="area">수도권</h4>
+
+					<ul>
+
+						<li class="cl1"><a href="/jungsu/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl1">①</span>서울정수캠퍼스</a></li>
+
+						<li class="cl1"><a href="/kangseo/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl1">①</span>서울강서캠퍼스</a></li>
+
+						<li class="cl1"><a href="/seongnam/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl1">①</span>성남캠퍼스</a></li>
+
+						<li class="cl1"><a href="/ctc/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl1">①</span>분당융합기술교육원</a><span class="orange">교육원</span></li>
+
+						<li class="cl2 blnk"><a href="/incheon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl2">②</span>인천캠퍼스</a></li>
+
+						<li class="cl2"><a href="/namincheon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl2">②</span>남인천캠퍼스</a></li>
+
+						<li class="cl2"><a href="/hwaseong/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl2">②</span>화성캠퍼스</a></li>
+
+						<li class="cl2"><a href="/gm/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl2">②</span>광명융합기술교육원</a><span class="orange">교육원</span></li>
+
+						<li class="cl8 blnk"><a href="/semi/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl8">★</span>반도체융합캠퍼스</a></li>
+
+					</ul>
+
+				</div>
+
+									
+
+				<div class="area_box">
+
+					<h4 class="area">강원도</h4>
+
+					<ul>
+
+						<li class="cl3"><a href="/chuncheon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl3">③</span>춘천캠퍼스</a></li>
+
+						<li class="cl3"><a href="/wonju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl3">③</span>원주캠퍼스</a></li>
+
+						<li class="cl3"><a href="/gangneung/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl3">③</span>강릉캠퍼스</a></li>
+
+					</ul>
+
+				</div>
+
+									
+
+				<div class="area_box">
+
+					<h4 class="area">충청도</h4>
+
+					<ul>
+
+						<li class="cl4"><a href="/daejeon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl4">④</span>대전캠퍼스</a></li>
+
+						<li class="cl4"><a href="/cheongju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl4">④</span>청주캠퍼스</a></li>
+
+						<li class="cl4"><a href="/asan/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl4">④</span>아산캠퍼스</a></li>
+
+						<li class="cl4"><a href="/hongseong/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl4">④</span>충남캠퍼스</a></li>
+
+						<li class="cl4"><a href="/chungju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl4">④</span>충주캠퍼스</a></li>
+
+						<li class="cl8 blnk"><a href="/bio/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl8">★</span>바이오캠퍼스</a></li>
+
+						<li class="cl10 blnk"><a href="/dasom/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl10">■</span>다솜고등학교</a><span class="green">기술대안고교</span></li>
+
+					</ul>
+
+				</div>
+
+									
+
+				<div class="area_box">
+
+					<h4 class="area">전라도</h4>
+
+					<ul>
+
+						<li class="cl5"><a href="/gwangju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl5">⑤</span>광주캠퍼스</a></li>
+
+						<li class="cl5"><a href="/jb/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl5">⑤</span>전북캠퍼스</a></li>
+
+						<li class="cl5"><a href="/jeonnam/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl5">⑤</span>전남캠퍼스</a></li>
+
+						<li class="cl5"><a href="/iksan/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl5">⑤</span>익산캠퍼스</a></li>
+
+						<li class="cl5"><a href="/suncheon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl5">⑤</span>순천캠퍼스</a></li>
+
+						<li class="cl11 blnk"><a href="/int/" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl11">◆</span>신기술교육원</a><span class="brown">교육원</span></li>
+
+						<li class="cl9 blnk"><a href="/hrd/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl9">●</span>인재원</a><span class="blue">인재원</span></li>
+
+					</ul>
+
+				</div>
+
+									
+
+				<div class="area_box">
+
+					<h4 class="area">경상도</h4>
+
+					<ul>
+
+						<li class="cl6"><a href="/daegu/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>대구캠퍼스</a></li>
+
+						<li class="cl6"><a href="/gumi/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>구미캠퍼스</a></li>
+
+						<li class="cl6"><a href="/namdaegu/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>남대구캠퍼스</a></li>	
+
+						<li class="cl6"><a href="/pohang/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>포항캠퍼스</a></li>
+
+						<li class="cl6"><a href="/yeongju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>영주캠퍼스</a></li>				
+
+						<li class="cl6"><a href="/yct/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl6">⑥</span>영남융합기술캠퍼스</a></li>
+
+						<li class="cl8 blnk"><a href="/robot/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl8">★</span>로봇캠퍼스</a></li>
+
+						<li class="cl7 blnk"><a href="/changwon/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>창원캠퍼스</a></li>	
+
+						<li class="cl7"><a href="/busan/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>부산캠퍼스</a></li>	
+
+						<li class="cl7"><a href="/ulsan/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>울산캠퍼스</a></li>		
+
+						<li class="cl7"><a href="/dongbusan/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>동부산캠퍼스</a></li>	
+
+						<li class="cl7"><a href="/jinju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>진주캠퍼스</a></li>
+
+						<li class="cl7" style="font-size: 13px;"><a href="/pptc/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl7">⑦</span>석유화학공정기술교육원</a><span class="orange">교육원</span></li>
+
+						<li class="cl8 blnk"><a href="/kapc/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl8">★</span>항공캠퍼스</a></li>
+
+					</ul>
+
+				</div>
+
+							
+
+				<div class="area_box">
+
+					<h4 class="area">제주도</h4>
+
+					<ul>
+
+						<li class="cl1"><a href="/jeju/index.do" onclick="goCampus(this); return false;" target="_blank" title="새창"><span class="cl1">①</span>제주캠퍼스</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<a href="#" class="all_campus_close" onclick="showAllCampus(); return false;"><img alt="한국폴리텍대학 전국 캠퍼스 바로가기 닫기" src="/images/kopo/all_cam_close.png"/></a>
+
+	</div>
+
+	<div class="all_campus_bg"></div>
+
+</div>
+
+<!-- 전국 캠퍼스 바로가기 :: e --><style>
+
+.corp .gnb-wrap .gnb .gnb-list .depth-1 > li .depth-2 .container .nav-list .category-detail a{
+
+display: block;
+
+margin-bottom: 0.625rem;
+
+/*font-size: 1rem;*/
+
+font-weight: 700;
+
+color: #0870b5; }
+
+
+
+section.home-footer {background-color: #464646 !important; }
+
+.gnb-wrap{max-width: initial;}
+
+</style>
+
+
+
+<div class="gnb-wrap" id="kopoMenu">
+
+<div class="gnb">
+
+	<h1 class="logo">
+
+		<a href="/index.do">
+
+			<img src="/assets2021/img/logo_header_pc.png" alt="한국폴리텍대학 ">
+
+		</a>
+
+	</h1>
+
+	<div class="gnb-list">
+
+		<div class="gnb-header for-mobile">
+
+			<div class="prefix">
+
+			</div>
+
+			<div class="suffix">
+
+				<a href="" class="for-mobile btn-close-menu">메뉴닫기</a>
+
+			</div>
+
+		</div>
+
+		<form name="mnufrm">
+
+		<ul class="depth-1 ">
+
+			<li><a href="javascript:showAllCampus()" class="snb-anchor" id="chd10282"><span>
+
+							전국 캠퍼스 안내</span></a><div class="depth-2"><div class="container">
+
+									</div></div></li>
+
+									<li><a href="#" class="snb-anchor" onclick="gnbMenuOver(this); return false;"><span>
+
+							입학안내</span></a><div class="depth-2"><div class="container">
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title link-to" onclick="goMenu('61'); return false;" id="chd59" target="_blank" title="새 창 열림"><span>
+
+							모집요강</span></a></div>
+
+									<ul><li><ul>
+
+										<li class="snb-anchor__sub snb-anchor__sub--type-child category-detail"><a href="#" class=" link-to" onclick="goMenu('11104'); return false;" id="chd61" target="_blank" title="새 창 열림"><span>
+
+							학위(학력)과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_112/content.do" class=" link-to" id="chd11104" target="_blank" title="새 창 열림"><span>
+
+							2년제학위과정</span></a></li>
+
+									<li ><a href="/content.do?menu=11870" class="" id="chd11870"><span>
+
+							고숙련 일학습병행(P-TECH)과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_113/content.do" class=" link-to" id="chd11105" target="_blank" title="새 창 열림"><span>
+
+							학위전공심화과정</span></a></li>
+
+									<li class="snb-anchor__sub snb-anchor__sub--type-child category-detail"><a href="#" class=" link-to" onclick="goMenu('11106'); return false;" id="chd64" target="_blank" title="새 창 열림"><span>
+
+							비학위 직업훈련과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_115/content.do" class=" link-to" id="chd11106" target="_blank" title="새 창 열림"><span>
+
+							전문기술과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_116/content.do" class=" link-to" id="chd11107" target="_blank" title="새 창 열림"><span>
+
+							하이테크과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_117/content.do" class=" link-to" id="chd11108" target="_blank" title="새 창 열림"><span>
+
+							일반계고 직업교육 위탁과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_114/content.do" class=" link-to" id="chd11109" target="_blank" title="새 창 열림"><span>
+
+							기능장과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_118/content.do" class=" link-to" id="chd11110" target="_blank" title="새 창 열림"><span>
+
+							신중년특화과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_119/content.do" class=" link-to" id="chd11865" target="_blank" title="새 창 열림"><span>
+
+							여성재취업과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_134/content.do" class=" link-to" id="chd13063" target="_blank" title="새 창 열림"><span>
+
+							신중년특화과정(단기)</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_136/content.do" class=" link-to" id="chd15270" target="_blank" title="새 창 열림"><span>
+
+							다문화청년 기술교육과정</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('116'); return false;" id="chd11111"><span>
+
+							입학안내</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/board.do?menu=116" class="" id="chd116"><span>
+
+							입학안내</span></a></li>
+
+									<li ><a href="https://pf.kakao.com/_MxeQxoxb" class=" link-to" id="chd11112" target="_blank" title="새 창 열림"><span>
+
+							입학상담</span></a></li>
+
+									<li ><a href="/content.do?menu=11333" class="" id="chd11333"><span>
+
+							입시자료집 신청</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('11113'); return false;" id="chd60"><span>
+
+							원서접수</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=11113" class="" id="chd11113"><span>
+
+							인터넷원서접수 바로가기</span></a></li>
+
+									<li ><a href="https://p.kopo.ac.kr/ipsi" class=" link-to" id="chd11114" target="_blank" title="새 창 열림"><span>
+
+							합격자조회</span></a></li>
+
+									<li ><a href="https://www.kebhana.com/service/univRegAmtNtfshInquiry.do#//HanaBank" class=" link-to" id="chd11115" target="_blank" title="새 창 열림"><span>
+
+							고지서출력/납부확인</span></a></li>
+
+									</ul></li></ul></div>
+
+										</div></div></li>
+
+										<li><a href="#" class="snb-anchor" onclick="gnbMenuOver(this); return false;"><span>
+
+							교육훈련과정안내</span></a><div class="depth-2"><div class="container">
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('8377'); return false;" id="chd2"><span>
+
+							학위(학력)과정</span></a></div>
+
+									<div style="display: none;"><input type="hidden" id="chd36" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd37" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd38" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd39" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8185" value="MENUTY0002" /></div>
+
+								<ul><li><ul>
+
+										<li ><a href="/content.do?menu=8377" class="" id="chd8377"><span>
+
+							2년제학위과정</span></a></li>
+
+									<li ><a href="/content.do?menu=11769" class="" id="chd11769"><span>
+
+							고숙련 일학습병행(P-TECH)과정</span></a></li>
+
+									<li ><a href="/content.do?menu=8392" class="" id="chd8392"><span>
+
+							학위전공심화과정</span></a></li>
+
+									<li ><a href="https://ipsi.kopo.ac.kr/poly/m_92/content.do" class=" link-to" id="chd40" target="_blank" title="새 창 열림"><span>
+
+							다솜고등학교</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd2531" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd2532" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd2533" value="MENUTY0002" /></div>
+
+								</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('62'); return false;" id="chd10"><span>
+
+							비학위직업훈련과정</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=62" class="" id="chd62"><span>
+
+							전문기술과정</span></a></li>
+
+									<li ><a href="/content.do?menu=8770" class="" id="chd8770"><span>
+
+							하이테크과정</span></a></li>
+
+									<li ><a href="/content.do?menu=8760" class="" id="chd8760"><span>
+
+							일반계고 직업교육 위탁과정</span></a></li>
+
+									<li ><a href="/content.do?menu=8393" class="" id="chd8393"><span>
+
+							기능장과정</span></a></li>
+
+									<li ><a href="/content.do?menu=8771" class="" id="chd8771"><span>
+
+							신중년 특화과정</span></a></li>
+
+									<li ><a href="/content.do?menu=53" class="" id="chd53"><span>
+
+							여성재취업과정</span></a></li>
+
+									<li ><a href="/content.do?menu=54" class="" id="chd54"><span>
+
+							신중년특화과정(단기)</span></a></li>
+
+									<li ><a href="/content.do?menu=15141" class="" id="chd15141"><span>
+
+							다문화 기술교육과정</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('14206'); return false;" id="chd15557"><span>
+
+							재직자과정</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=14206" class="" id="chd14206"><span>
+
+							소규모사업장훈련</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="https://sanhak.kopo.ac.kr/www/index.do" class="snb-anchor__sub snb-anchor__sub--type-title link-to" id="chd15556" target="_blank" title="새 창 열림"><span>
+
+							산학협력사업</span></a></div>
+
+									</div>
+
+											</div></div>
+
+										<li><a href="#" class="snb-anchor" onclick="gnbMenuOver(this); return false;"><span>
+
+							정보공개</span></a><div class="depth-2"><div class="container">
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('158'); return false;" id="chd138"><span>
+
+							정보공개제도안내</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=158" class="" id="chd158"><span>
+
+							정보공개제도란</span></a></li>
+
+									<li ><a href="/content.do?menu=159" class="" id="chd159"><span>
+
+							정보공개절차</span></a></li>
+
+									<li ><a href="/content.do?menu=160" class="" id="chd160"><span>
+
+							정보공개방법</span></a></li>
+
+									<li ><a href="/content.do?menu=161" class="" id="chd161"><span>
+
+							불복구제절차</span></a></li>
+
+									<li ><a href="/content.do?menu=162" class="" id="chd162"><span>
+
+							수수료안내</span></a></li>
+
+									<li ><a href="/content.do?menu=163" class="" id="chd163"><span>
+
+							정보공개청구</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('156'); return false;" id="chd139"><span>
+
+							사전정보공개</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="#" class="" onclick="goMenu('1157'); return false;" id="chd156"><span>
+
+							사전행정정보공표목록</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1157" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8402" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1158" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1159" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8401" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1160" value="MENUTY0002" /></div>
+
+								<li ><a href="/board.do?menu=157" class="" id="chd157"><span>
+
+							생산문서목록</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="/content.do?menu=140" class="snb-anchor__sub snb-anchor__sub--type-title" id="chd140"><span>
+
+							공공데이터 개방</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=155" class="" id="chd155"><span>
+
+							공공데이터목록</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('147'); return false;" id="chd141"><span>
+
+							계약정보공개</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="#" class="" onclick="goMenu('1161'); return false;" id="chd147"><span>
+
+							계약업무처리절차</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1161" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1162" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1163" value="MENUTY0002" /></div>
+
+								<li ><a href="/content.do?menu=149" class="" id="chd149"><span>
+
+							입찰공고</span></a></li>
+
+									<li ><a href="/content.do?menu=150" class="" id="chd150"><span>
+
+							개찰결과</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('145'); return false;" id="chd142"><span>
+
+							부패공직자공개</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="#" class="" onclick="goMenu('1680'); return false;" id="chd145"><span>
+
+							징계제도 현황</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1680" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1681" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1682" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1683" value="MENUTY0002" /></div>
+
+								<li ><a href="/content.do?menu=146" class="" id="chd146"><span>
+
+							부패 행위자 현황</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="/board.do?menu=143" class="snb-anchor__sub snb-anchor__sub--type-title" id="chd143"><span>
+
+							사업실명제</span></a></div>
+
+									</div>
+
+										<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('6840'); return false;" id="chd14438"><span>
+
+							시설확충사업</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/board.do?menu=6840" class="" id="chd6840"><span>
+
+							민간투자사업(BTL)</span></a></li>
+
+									<li ><a href="/board.do?menu=14437" class="" id="chd14437"><span>
+
+							대학 증·개축사업</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="https://www.kopo.ac.kr/content.do?menu=127&group=42&sub=44" class="snb-anchor__sub snb-anchor__sub--type-title" id="chd10736"><span>
+
+							연구보고서</span></a></div>
+
+									</div>
+
+											</div></div>
+
+										<li><a href="#" class="snb-anchor" onclick="gnbMenuOver(this); return false;"><span>
+
+							폴리텍대학 소개</span></a><div class="depth-2"><div class="container">
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('87'); return false;" id="chd86"><span>
+
+							폴리텍대학 소개</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=87" class="" id="chd87"><span>
+
+							대학안내</span></a></li>
+
+									<li ><a href="/content.do?menu=88" class="" id="chd88"><span>
+
+							설립근거 및 목적</span></a></li>
+
+									<li ><a href="http://www.kopohistory.com/" class=" link-to" id="chd12920" target="_blank" title="새 창 열림"><span>
+
+							폴리텍 역사</span></a></li>
+
+									<li ><a href="#" class="" onclick="goMenu('1689'); return false;" id="chd122"><span>
+
+							대학CI</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1689" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1690" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1691" value="MENUTY0002" /></div>
+
+								<li ><a href="/content.do?menu=89" class="" id="chd89"><span>
+
+							K-SHIFT 비전전략체계</span></a></li>
+
+									<li ><a href="/content.do?menu=15695" class="" id="chd15695"><span>
+
+							안전보건 경영방침</span></a></li>
+
+									<li ><a href="/content.do?menu=90" class="" id="chd90"><span>
+
+							주요성과</span></a></li>
+
+									<li ><a href="#" class="" onclick="goMenu('1164'); return false;" id="chd91"><span>
+
+							대학기구</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1164" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1165" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1166" value="MENUTY0006" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('8128'); return false;" id="chd92"><span>
+
+							전국 캠퍼스안내</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd8128" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1704" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1705" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1706" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1707" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1708" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1709" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1710" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1711" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1712" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1713" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10592" value="MENUTY0002" /></div>
+
+								<li ><a href="/content.do?menu=8149" class="" id="chd8149"><span>
+
+							찾아오시는 길</span></a></li>
+
+									<li ><a href="/board.do?menu=15157" class="" id="chd15157"><span>
+
+							MOU체결 현황</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('15286'); return false;" id="chd93"><span>
+
+							이사장실</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=15286" class="" id="chd15286"><span>
+
+							인사말</span></a></li>
+
+									<li ><a href="/content.do?menu=15287" class="" id="chd15287"><span>
+
+							프로필</span></a></li>
+
+									<li ><a href="/content.do?menu=8872" class="" id="chd8872"><span>
+
+							이사장과의 대화</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('104'); return false;" id="chd103"><span>
+
+							대학현황</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=104" class="" id="chd104"><span>
+
+							연혁</span></a></li>
+
+									<li ><a href="/content.do?menu=106" class="" id="chd106"><span>
+
+							직업교육계획</span></a></li>
+
+									<li ><a href="/cp/sso/sso_lift.jsp" class=" link-to" id="chd105" target="_blank" title="새 창 열림"><span>
+
+							규정집</span></a></li>
+
+									<li ><a href="http://sanhak.kopo.ac.kr" class=" link-to" id="chd133" target="_blank" title="새 창 열림"><span>
+
+							산학협력사업</span></a></li>
+
+									<li ><a href="#" class="" onclick="goMenu('1697'); return false;" id="chd132"><span>
+
+							국제협력사업</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1697" value="MENUTY0000" data-child="1699" /></div>
+
+							<div style="display: none;"><input type="hidden" id="chd1699" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1700" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1701" value="MENUTY0004" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1698" value="MENUTY0000" data-child="1702" /></div>
+
+							<div style="display: none;"><input type="hidden" id="chd1702" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1703" value="MENUTY0004" /></div>
+
+								</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('115'); return false;" id="chd114"><span>
+
+							폴리텍대학 소식</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/board.do?menu=115" class="" id="chd115"><span>
+
+							공지사항</span></a></li>
+
+									<li ><a href="/board.do?menu=10523" class="" id="chd10523"><span>
+
+							교직원 채용정보</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('14477'); return false;" id="chd117"><span>
+
+							폴리텍대학 홍보</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="#" class="" onclick="goMenu('118'); return false;" id="chd14477"><span>
+
+							홍보 자료집</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd118" value="MENUTY0004" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd119" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd15797" value="MENUTY0004" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('1688'); return false;" id="chd120"><span>
+
+							언론보도/보도·설명자료</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1688" value="MENUTY0004" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd121" value="MENUTY0004" /></div>
+
+								<li ><a href="https://bizring.biz/client/BizringIn.jsp?incnum=W46Z0g548G" class=" link-to" id="chd11621" target="_blank" title="새 창 열림"><span>
+
+							폴리텍 컬러링 신청</span></a></li>
+
+									<li ><a href="/content.do?menu=13717" class="" id="chd13717"><span>
+
+							폴리텍English 음원</span></a></li>
+
+									<li ><a href="https://www.polymeta.land" class=" link-to" id="chd14663" target="_blank" title="새 창 열림"><span>
+
+							폴리텍메타버스</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('108'); return false;" id="chd107"><span>
+
+							폴리텍대학 강점</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=108" class="" id="chd108"><span>
+
+							높은 취업률</span></a></li>
+
+									<li ><a href="/content.do?menu=109" class="" id="chd109"><span>
+
+							최저 수준 등록금</span></a></li>
+
+									<li ><a href="/content.do?menu=110" class="" id="chd110"><span>
+
+							현장 실무형 학사제도</span></a></li>
+
+									<li ><a href="/content.do?menu=111" class="" id="chd111"><span>
+
+							기업전담제</span></a></li>
+
+									<li ><a href="/content.do?menu=112" class="" id="chd112"><span>
+
+							참人폴리텍</span></a></li>
+
+									<li ><a href="#" class="" onclick="goMenu('113'); return false;" id="chd7360"><span>
+
+							NCS 수준별 교육훈련체계</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd113" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd7359" value="MENUTY0002" /></div>
+
+								<li ><a href="/board.do?menu=11460" class="" id="chd11460"><span>
+
+							우수 프로젝트 작품</span></a></li>
+
+									</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('14698'); return false;" id="chd14691"><span>
+
+							꿈드림공작소</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=14698" class="" id="chd14698"><span>
+
+							꿈드림공작소 소개</span></a></li>
+
+									<li ><a href="https://dream.kopo.ac.kr/" class=" link-to" id="chd14692" target="_blank" title="새 창 열림"><span>
+
+							꿈드림공작소 신청</span></a></li>
+
+									<li ><a href="#" class="" onclick="goMenu('10283'); return false;" id="chd10343"><span>
+
+							러닝팩토리</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd10283" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10284" value="MENUTY0000" data-child="11672" /></div>
+
+							<div style="display: none;"><input type="hidden" id="chd11672" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11673" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11674" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11675" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11676" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11677" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11678" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11679" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11680" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11681" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11682" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11683" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11684" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11685" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11686" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11687" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10295" value="MENUTY0005" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10025" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10285" value="MENUTY0004" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('13007'); return false;" id="chd13009"><span>
+
+							거점공유스튜디오</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd13007" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd13008" value="MENUTY0002" /></div>
+
+								</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="#" class="snb-anchor__sub snb-anchor__sub--type-title" onclick="goMenu('127'); return false;" id="chd126"><span>
+
+							열린경영</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="#" class="" onclick="goMenu('13948'); return false;" id="chd127"><span>
+
+							경영공시</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd13948" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd13949" value="MENUTY0004" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('1692'); return false;" id="chd128"><span>
+
+							윤리경영</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1692" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1693" value="MENUTY0002" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('10563'); return false;" id="chd10562"><span>
+
+							인권경영</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd10563" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10564" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10565" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10566" value="MENUTY0005" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('1695'); return false;" id="chd129"><span>
+
+							고객헌장</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd1695" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9417" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd1696" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9418" value="MENUTY0004" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('8399'); return false;" id="chd8398"><span>
+
+							사이버이사회</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd8399" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8344" value="MENUTY0003" /></div>
+
+								<li ><a href="#" class="" onclick="goMenu('11009'); return false;" id="chd11034"><span>
+
+							적극행정</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd11009" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd11035" value="MENUTY0002" /></div>
+
+								</ul></li></ul></div>
+
+									<div class="nav-list"><div class="category"><a href="/content.do?menu=131" class="snb-anchor__sub snb-anchor__sub--type-title" id="chd131"><span>
+
+							참여게시판</span></a></div>
+
+									<ul><li><ul>
+
+										<li ><a href="/content.do?menu=135" class="" id="chd135"><span>
+
+							민원광장</span></a></li>
+
+									<li ><a href="/content.do?menu=8841" class="" id="chd8841"><span>
+
+							성희롱 신고센터</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd8842" value="MENUTY0004" /></div>
+
+								<li ><a href="/content.do?menu=10389" class="" id="chd10389"><span>
+
+							안전제안(신고)센터</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd10390" value="MENUTY0004" /></div>
+
+								<li ><a href="/board.do?menu=137" class="" id="chd137"><span>
+
+							홈페이지오류신고</span></a></li>
+
+									<li ><a href="/content.do?menu=10600" class="" id="chd10600"><span>
+
+							부조리신고센터</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd136" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd7364" value="MENUTY0003" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9472" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9473" value="MENUTY0003" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8564" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8565" value="MENUTY0003" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9300" value="MENUTY0004" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd9150" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8829" value="MENUTY0000" data-child="8832" /></div>
+
+							<div style="display: none;"><input type="hidden" id="chd8832" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8831" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8833" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8836" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8837" value="MENUTY0002" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd10650" value="MENUTY0005" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd8830" value="MENUTY0005" /></div>
+
+								<li ><a href="/content.do?menu=11696" class="" id="chd11696"><span>
+
+							인권침해 신고센터</span></a></li>
+
+									<li ><a href="/content.do?menu=13366" class="" id="chd13366"><span>
+
+							국민제안</span></a></li>
+
+									<div style="display: none;"><input type="hidden" id="chd13438" value="MENUTY0004" /></div>
+
+								<div style="display: none;"><input type="hidden" id="chd13439" value="MENUTY0004" /></div>
+
+								</ul></li></ul></div></div></div></li>
+
+						</ul>
+
+		</form>
+
+	</div>
+
+	<div class="search-group">
+
+		<a href ="/search.do" title="통합검색">
+
+			<span class="icon-search" title="통합검색">통합검색</span>
+
+		</a>
+
+		<a class="gnb-toggle for-pc" href="/content.do?menu=1668" >
+
+			<span class="icon-hamburger">메뉴</span>
+
+		</a>
+
+		<a href="javascript:void(0);" class="gnb-toggle for-mobile">
+
+			<span class="icon-hamburger">전체메뉴</span>
+
+		</a>
+
+	</div>
+
+</div>
+
+</div>
+
+
+
+<div class="float-btn-group">
+
+	<ul>
+
+		<li>
+
+			<a href="#" class="btn-circle bg-01"><span class="icon-student-soon"></span><span>예비신입생</span></a>
+
+			<ul class="sub-btn">
+
+				<li><a href="https://www.kopo.ac.kr/content.do?menu=12391" target='_blank' title="새창">모집요강</a></li>
+
+				<li><a href="/content.do?menu=11113">원서접수</a></li>
+
+				<li><a href="https://e.kopo.ac.kr/nx/index_external.html?bWVudUlkPU0wMDU1NDgmbG9naW5HYm49ZXgmc2hvd1RpdGxlPWZhbHNl" target="_blank" title="새창">과년도내신등급조회</a></li>
+
+				<li><a href="https://e.kopo.ac.kr/nx/index_external.html?bWVudUlkPU0wMDU1NDUmbG9naW5HYm49ZXgmc2hvd1RpdGxlPWZhbHNl" target="_blank" title="새창">합격자조회</a></li>
+
+				<li><a href="https://www.kebhana.com/service/univRegAmtNtfshInquiry.do" target="_blank" title="새창">고지서출력/납부확인</a></li>
+
+			</ul>
+
+		</li>
+
+		<li>
+
+			<a href="#" class="btn-circle bg-02"><span class="icon-student"></span><span>학생</span></a>
+
+			<ul class="sub-btn">
+
+				<li><a href="https://p.kopo.ac.kr/" target="_blank" title="새창">학생정보시스템</a></li>
+
+				<li><a href="/content.do?menu=80" target="_blank" title="새창">증명서 발급</a></li>
+
+				</ul>
+
+		</li>
+
+		<li>
+
+			<a href="#" class="btn-circle bg-03"><span class="icon-employee"></span><span>교직원</span></a>
+
+			<ul class="sub-btn">
+
+				<li><a href="https://p.kopo.ac.kr/" target="_blank" title="새창">종합정보시스템</a></li>
+
+				<li><a href="/board.do?menu=115">공지사항</a></li>
+
+				<li><a href="https://www.kopo.ac.kr/cp/sso/sso_lift.jsp" target="_blank" title="새창">규정집</a></li>
+
+			</ul>
+
+		</li>
+
+		<li><a href="#" onclick="letsGoTowardsTheTop();" class="btn-circle top-btn"><span class="icon-top"></span><span>TOP</span></a></li>
+
+	</ul>
+
+</div>
+
+<script>
+
+	$(function(){
+
+		gnb();
+
+		gnbMobile();
+
+		selectLang();
+
+		window.addEventListener("resize", function () {
+
+			windowWidth = $(window).width();
+
+			setTimeout(function () {
+
+				gnb();
+
+			}, 300);
+
+		});
+
+	})
+
+</script>
+
+<div class="fullpage" id="pg-div">
+
+		<script src="/js/kopo/facebook_corp.js?v=1.5"></script>
+
+<script>
+
+	$(document).ready(function() {
+
+		$('.main-banner-wrap').find('map').find('area').each(function(){
+
+			if($(this).parent().hasClass('is_m')){
+
+				var pairs = $(this).attr("coords").split(', ');
+
+		        for(var i=0; i<pairs.length; i++) {
+
+		        	var nums = pairs[i].split(',');
+
+		        	for(var j=0; j<nums.length; j++) {
+
+		        		if(j==0||j==2){
+
+		               		 nums[j] = parseFloat(nums[j]) -470;
+
+		        		}else{
+
+		        			 nums[j] = parseFloat(nums[j]);
+
+		        		}
+
+		            }
+
+		            pairs[i] = nums.join(',');
+
+		        }
+
+		        $(this).attr("coords", pairs.join(', '));	
+
+			}
+
+	    });
+
+		// IE8  issue
+
+		setTimeout(function() {
+
+			var ieVer = getInternetExplorerVersion();
+
+			if (ieVer == "N/A" || ieVer > 8) {
+
+				$('img[usemap]').rwdImageMaps();
+
+			}
+
+		}, 100);
+
+	});
+
+	
+
+</script>
+
+<style>
+
+@media all and (min-width: 1025px) {
+
+	.corp header {position:fixed;}
+
+	.corp .gnb-wrap {position:fixed;top: 3.125rem;}
+
+	.corp .gnb-wrap .gnb .gnb-list .depth-1>li .depth-2 {top: 5.625rem;}
+
+}
+
+/* facebook text 비노출 20210910*/
+
+.poli-community .horizon-scroll > ul .item .slot .title {display:none;}
+
+</style>
+
+<script>
+
+$(document).ready(function() {
+
+	$(".video-controller .ctl-btn").on("click", function() {
+
+		if($('.main-banner video').length > 0) {//비디오가 있을 때만 실행
+
+			if($(this).hasClass('is-paused')) {
+
+				//재생
+
+				$(this).removeClass('is-paused')
+
+				//console.log($(this).parent().find('video'));
+
+				$(this).parents('.item').find('video').get(0).play();
+
+				$(".blind", $(this)).text("영상 정지");
+
+			} else {
+
+				//정지
+
+				$(this).addClass('is-paused')
+
+				$(this).parents('.item').find('video').get(0).pause();
+
+				//$(this).parent().find('video').get(0).pause();
+
+				$(".blind", $(this)).text("영상 재생");
+
+			}
+
+		}
+
+	});
+
+});
+
+</script>
+
+
+
+<section class="main-banner-wrap section height-auto">
+
+	<h2 class="hidden">한국폴리텍 주요정보</h2>
+
+	<!-- 메인빅배너 :: S -->
+
+	<style>
+
+			@media (min-width: 1025px) {
+
+				section.main-banner-wrap .main-banner.slider .item video {
+
+				  top: 28.5rem;
+
+				  min-height: auto;
+
+				}
+
+			}
+
+		</style>
+
+		<div class="main-banner slider">
+
+			<div class="item">
+
+				<video loop muted autoplay playsinline id="kopo-video" 
+
+					poster="https://www.kopo.ac.kr/down/video/kopo_20230901.jpg">
+
+					<source src="https://www.kopo.ac.kr/down/video/kopo_20240229.mp4" type="video/mp4">
+
+				</video>
+
+				<pre class="blind">
+
+				뿌리기술부터 신산업 분야까지
+
+				누구에게나 열린 기술교육 기회
+
+				세상이 원하는 인재
+
+				내가 원하는 취업
+
+				지금 폴리텍의 가능성은 100%
+
+				대한민국 대표
+
+				평생직업능력개발 대학
+
+				폴리텍이 정답이다
+
+				한국폴리텍대학
+
+				</pre>
+
+				<div class="video-controller">
+
+					<button class="ctl-btn" type="button"><span class="blind">영상 재생</span></button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 메인빅배너 :: E -->
+
+	<div class="quick-menu-wrap lazy">
+
+		<div class="quick-menu">
+
+			<div class="quick-menu-list">
+
+				<ul>
+
+				<li>
+
+							<a href="/content.do?menu=80" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000004362&fileSn=1');"></span><span class="icon-txt">인터넷<span class='for-mobile'><br/></span>증명발급</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://p.kopo.ac.kr" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000002632&fileSn=2');"></span><span class="icon-txt">학생<span class='for-mobile'><br/></span>정보시스템</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://ipsi.kopo.ac.kr/index.do" >
+
+								<span class="icon-quick" style="background-image: url('/assets2021/img/quick/new/icon_quick_17.png');"></span><span class="icon-txt">입시<span class='for-mobile'><br/></span>홈페이지</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://ipsi.kopo.ac.kr/poly/m_112/content.do" >
+
+								<span class="icon-quick" style="background-image: url('/assets2021/img/quick/new/icon_quick_06.png');"></span><span class="icon-txt">모집요강</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://e.kopo.ac.kr/nx/index_external.html?bWVudUlkPU0wMDU1NDUmbG9naW5HYm49ZXgmc2hvd1RpdGxlPWZhbHNl" >
+
+								<span class="icon-quick" style="background-image: url('/assets2021/img/quick/new/icon_quick_29.png');"></span><span class="icon-txt">합격자발표</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://www.kopo.ac.kr/content.do?menu=11655" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('/assets2021/img/quick/new/icon_quick_14.png');"></span><span class="icon-txt">채용정보등록</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://dream.kopo.ac.kr/" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000340833&fileSn=2');"></span><span class="icon-txt">꿈드림공작소</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://www.polymeta.land" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000340371&fileSn=0');"></span><span class="icon-txt">폴리텍메타버스</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="https://sanhak.kopo.ac.kr/www/index.do" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('/assets2021/img/quick/new/icon_quick_10.png');"></span><span class="icon-txt">산학협력단</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="http://www.kopohistory.com/" target="_blank" title="새창" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000276798&fileSn=0');"></span><span class="icon-txt">폴리텍 역사</span>
+
+								</a>
+
+						</li>
+
+					<li>
+
+							<a href="http://www.kopo.ac.kr/content.do?menu=8841" >
+
+								<span class="icon-quick" style="background-image: url('https://www.kopo.ac.kr/cmm/fms/kopoImg.do?atchFileId=FILE_000000000089927&fileSn=1');"></span><span class="icon-txt">성희롱<span class='for-mobile'><br/></span>신고센터</span>
+
+								</a>
+
+						</li>
+
+					</ul>
+
+				<a href="#" class="quick-menu-toggle">메뉴 펼치기</a>
+
+				</div>
+
+			<div class="btn-wrap">
+
+				<button onclick="popOpen('.sch-pop')">나에게 맞는 폴리텍 과정 찾기</button>
+
+				<a href="#" onclick="popOpen('.sch-pop')" class="btn-open">
+
+					<span class="for-mobile">나에게 맞는 폴리텍</span>
+
+					<span>과정찾기</span>
+
+				</a>
+
+			</div>
+
+			</div>
+
+	</div>
+
+	<div class="scroll-down">
+
+		<span>SCROLL DOWN</span>
+
+	</div>
+
+</section>
+
+
+
+<section class="news section height-auto">
+
+	<div class="container lazy">
+
+	<h2><span class="em">폴리텍</span> 소식</h2>
+
+	<style>
+
+		.tab-link ul>li.bg_all.active:after {background-color: #4be3e4 !important;}
+
+		.tab-link ul>li.bg_notice.active:after {background-color: #10b0ec !important;}
+
+		.tab-link ul>li.bg_media.active:after {background-color: #b7bc35 !important;}
+
+		.tab-link ul>li.bg_entrance.active:after {background-color: #f08312 !important;}
+
+		</style>
+
+		<!--공지사항/언론보도/입학안내 :: S-->
+
+		<script type="text/javascript"> 
+
+			function openTab(obj, idx) {
+
+				var target = $(".notice__content > div .tab-wrap");
+
+				var targetMoreBtn = $(obj).parents().next('.btn-wrap').find('.btn-more');
+
+				$(obj).parent().addClass("active").siblings().removeClass("active");
+
+				$(obj).attr("title","선택됨");
+
+				$(obj).parent('li').siblings().find('a').removeAttr("title");
+
+				target.eq(idx).addClass("active").siblings().removeClass("active");
+
+				if(idx != 0) {
+
+					targetMoreBtn.eq(idx).addClass("active").siblings().removeClass("active");
+
+				} else {
+
+					targetMoreBtn.eq(idx).siblings().removeClass("active");
+
+				}
+
+			}
+
+		</script>
+
+		<div class="tab-link">
+
+			<ul>
+
+				<li class="active bg_all"><a href="#" onclick="openTab(this, 0); return false;" title="선택됨">전체</a></li>
+
+				<li class="bg_notice"><a href="#" onclick="openTab(this, 1); return false;">공지사항</a></li>
+
+				<li class="bg_media"><a href="#" onclick="openTab(this, 2); return false;">언론보도</a></li>
+
+				<li class="bg_entrance"><a href="#" onclick="openTab(this, 3); return false;">입학안내</a></li>
+
+			</ul>
+
+			<div class="btn-wrap">
+
+				<a class="btn-more" title="공지사항 더보기" href="/board.do?menu=115">더보기</a>
+
+				<a class="btn-more" title="공지사항 더보기" href="/board.do?menu=115">더보기</a>
+
+				<a class="btn-more" title="언론보도 더보기" href="/board.do?menu=1688">더보기</a>
+
+				<a class="btn-more" title="입학안내 더보기" href="/board.do?menu=116">더보기</a>
+
+			</div>
+
+		</div>
+
+		<div class="notice__content">
+
+			<!-- 전체 S-->
+
+			<div class="news-boards">
+
+				<div class="board">
+
+					<h3 class="hidden">전체 게시판</h3>
+
+					<ul class="tab-wrap active">
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=735325&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">중소기업기술마켓 성공사례집</p>
+
+								<div class="date">2024-11-12</div>
+
+							</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=727561&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">중소기술마켓 제도를 소개해드립니다.</p>
+
+								<div class="date">2024-08-28</div>
+
+							</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.segye.com/newsView/20241111515138" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">세계일보 - “인생 2막 출발은 기술” 열공하는 신중년</p>
+
+								<div class="date">2024-11-12</div>
+
+							</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.segye.com/newsView/20241111515066" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">세계일보 - 이철수 한국폴리텍대학 이사장 “유능한 교수 채용하려 교원 정년 65세로 연장”</p>
+
+								<div class="date">2024-11-12</div>
+
+							</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=733745&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 직업교육과정 입학가이드북</p>
+
+								<div class="date">2024-10-30</div>
+
+							</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=732223&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 2년제학위과정 입시담당자 전화번호(전국)</p>
+
+								<div class="date">2024-09-16</div>
+
+							</a>
+
+						</li>
+
+						</ul>
+
+					<h3 class="hidden">공지사항</h3>
+
+					<ul class="tab-wrap">
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=735325&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">중소기업기술마켓 성공사례집</p>
+
+								<div class="date">2024-11-12</div>
+
+								</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=727561&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">중소기술마켓 제도를 소개해드립니다.</p>
+
+								<div class="date">2024-08-28</div>
+
+								</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=735479&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">공공기관 고객만족도 조사 관련 개인정보 위탁(제3자 제공)사항 알림</p>
+
+								<div class="date">2024-11-13</div>
+
+								</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=732548&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">9월 중소기업기술마켓 카드뉴스</p>
+
+								<div class="date">2024-09-30</div>
+
+								</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=729530&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">삼정KPMG 자립준비청년 IT 미래인재 성장지원 프로그램 참가자 모집 공고</p>
+
+								<div class="date">2024-09-13</div>
+
+								</a>
+
+						</li>
+
+						<li class="notice">
+
+							<a class="" href="/board.do?menu=115&mode=view&post=728764&pageIndex=1">
+
+								<span class="title">공지사항</span>
+
+								<p class="content">2024 직업능력의 달(9월) 행사 안내</p>
+
+								<div class="date">2024-09-09</div>
+
+								</a>
+
+						</li>
+
+						</ul>
+
+					<h3 class="hidden">언론보도</h3>
+
+					<ul class="tab-wrap">
+
+						<li class="media">
+
+							<a class="" href="https://www.segye.com/newsView/20241111515138" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">세계일보 - “인생 2막 출발은 기술” 열공하는 신중년</p>
+
+								<div class="date">2024-11-12</div>
+
+								</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.segye.com/newsView/20241111515066" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">세계일보 - 이철수 한국폴리텍대학 이사장 “유능한 교수 채용하려 교원 정년 65세로 연장”</p>
+
+								<div class="date">2024-11-12</div>
+
+								</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://news.heraldcorp.com/view.php?ud=20241110050086" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">헤럴드경제 - 취업? 폴리텍대학이라면 OK! &#034;25일까지 2년제 학위과정 수시 2차 모집&#034;</p>
+
+								<div class="date">2024-11-11</div>
+
+								</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.naeil.com/news/read/527969?ref=naver" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">내일신문 - 폴리텍, 벤처창업아이템 경진대회 열어</p>
+
+								<div class="date">2024-11-06</div>
+
+								</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.viva100.com/article/20241030500777" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">브릿지경제 - 폴리텍대, 내달 1일 반도체·AI 등 직업훈련과정 신입생 5080명 모집</p>
+
+								<div class="date">2024-10-30</div>
+
+								</a>
+
+						</li>
+
+						<li class="media">
+
+							<a class="" href="https://www.chosun.com/economy/startup_story/2024/10/27/QY4KHGASNFEF5FKQQ7CSFU4PHE/" target="_blank" title="새창">
+
+								<span class="title">언론보도</span>
+
+								<p class="content">조선일보 - 정해진 때가 어딨나, 마흔여섯에 대학 들어간 50억 사장님의 인생 &#039;타이밍&#039;</p>
+
+								<div class="date">2024-10-28</div>
+
+								</a>
+
+						</li>
+
+						</ul>
+
+					<h3 class="hidden">입학안내</h3>
+
+					<ul class="tab-wrap">
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=733745&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 직업교육과정 입학가이드북</p>
+
+								<div class="date">2024-10-30</div>
+
+								</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=732223&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 2년제학위과정 입시담당자 전화번호(전국)</p>
+
+								<div class="date">2024-09-16</div>
+
+								</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=732221&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 2년제학위과정 입시자료집(전국)</p>
+
+								<div class="date">2024-09-09</div>
+
+								</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=727019&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2025학년도 2년제학위과정 전형 일정 안내</p>
+
+								<div class="date">2024-08-21</div>
+
+								</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=717453&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2024학년도 다문화 청년 특화 훈련 모집 안내(변경)</p>
+
+								<div class="date">2024-03-15</div>
+
+								</a>
+
+						</li>
+
+						<li class="entrance">
+
+							<a class="" href="/board.do?menu=116&mode=view&post=705963&pageIndex=1">
+
+								<span class="title">입학안내</span>
+
+								<p class="content">2024학년도 직업훈련과정 입학가이드북 안내</p>
+
+								<div class="date">2023-10-31</div>
+
+								</a>
+
+						</li>
+
+						</ul>
+
+				</div>
+
+				<!-- 중앙 우측배너 S -->
+
+				<div class="sub-banner">
+    <ul>
+<li>
+                   <img alt="학교법인 한국폴리텍대학 광주캠퍼스·대구캠퍼스 안전보건경영시스템 KOSHA-MS 인증 획득 23년도 학교법인·인천캠퍼스 획득" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000389163" /></li>
+               <li>
+                   <a class="links" style="cursor: pointer;" href="https://www.acrc.go.kr/board.es?mid=a10403020000&bid=CDNS&act=view&list_no=77463" target="_blank" title="새 창"><img alt="우리사회의 공정과 원칙을 지키는 당신의 용기 부패·공익신고 철저한 비밀보장과 보호를 약속합니다. 국민권익위원회" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000381992" /></a></li>
+               <li>
+                   <a class="links" style="cursor: pointer;" href="https://www.kopo.ac.kr/board.do?menu=115&mode=view&post=715561" target="_blank" title="새 창"><img alt="보건복지부  비상진료에 따른 병·의원 이용안내  경증일 때는 지역의 병·의원으로 가셔야 합니다  상급종합병원에서 경증 환자는 지역 병·의원으로 재의뢰되실 수 있습니다.  ● 문 여는 의료기관 확인 응급의료포털(www.e-gen.or.kr)·복지부 시도 보건소·건보공단·심평원 홈페이지  - 복지부 : 129 - 건보공단 : 1577-1000 - 심평원 : 1644-2000 - 119 ※ 관련 문의사항은 관할 보건소로 연락하시기 바랍니다.  ● 비대면 진료 건강보험심사평가원 홈페이지(https://www.hira.or.kr)  ● 피해신고 의사 집단행동 피해신고·지원센터 : 129 - 연결 후 8번" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000362558" /></a></li>
+               <li>
+                   <a class="links" style="cursor: pointer;" href="https://www.kopo.ac.kr/board.do?menu=115&mode=view&post=715561" target="_blank" title="새 창"><img alt="아래 상급종합병원은 중증환자 이용을 권고, 경증환자 이용시 지역 병·의원에 재의뢰되실 수 있습니다.제5기 상급종합병원 지정기관 현황(2024년)  예시 캡처이미지이며 자세한 사항은 클릭하여 상세페이지에서 확인하세요" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000362554" /></a></li>
+               </ul>
+<span class="nav">실시간 공지</span>
+<button class="play-btn stop"><span class="icon">일시정지</span></button>
+</div>
+<!-- // 중앙 우측배너 E -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+
+
+<section class="campus-info section height-auto">
+
+	<div class="container lazy tab-container">
+
+	<h2><span class="em">전국 캠퍼스</span> 안내</h2>
+
+	<div class="tab-link">
+
+			<ul>
+
+				<li class="active"><a href="#none" title="선택됨">수도권<span>(9)</span></a></li>
+
+				<li><a href="#none">강원도<span>(3)</span></a></li>
+
+				<li><a href="#none">충청도<span>(7)</span></a></li>
+
+				<li><a href="#none">전라도<span>(7)</span></a></li>
+
+				<li><a href="#none">경상북도<span>(7)</span></a></li>
+
+				<li><a href="#none">경상남도<span>(7)</span></a></li>
+
+				<li><a href="#none">제주도<span>(1)</span></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap active">
+
+			<h3 class="hidden">수도권</h3>
+
+			<ul class="campus__info-list" data-position="campusSeoul">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/jungsu/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/jungsu.png"
+
+									alt='서울정수캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									서울정수캠퍼스</span><span class="address">[04392] 서울시 용산구
+
+									보광로 73</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/kangseo/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/kangseo.png"
+
+									alt='서울강서캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									서울강서캠퍼스</span><span class="address">[07684] 서울특별시
+
+									강서구 우장산로10길 112</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/seongnam/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/seongnam.png"
+
+									alt='성남캠퍼스  전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									성남캠퍼스</span><span class="address">[13122] 경기도
+
+									성남시 수정구 수정로 398</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/ctc/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/ctc.png"
+
+									alt='분당융합기술교육원 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									분당융합기술교육원</span><span class="address">[13590] 경기도 성남시 분당구
+
+									황새울로 329번길 5</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/incheon/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/incheon.png"
+
+									alt='인천캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									인천캠퍼스</span><span class="address">[21417] 인천광역시
+
+									부평구 무네미로 448번길 56</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/namincheon/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/namincheon.png"
+
+									alt='남인천캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									남인천캠퍼스</span><span class="address">[22121]
+
+									인천광역시 미추홀구 염전로333번길 23</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/hwaseong/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/hwaseong.png"
+
+									alt='화성캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									화성캠퍼스</span><span class="address">[18534] 경기도
+
+									화성시 팔탄면 제암고주로 108</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/gm/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/gm.png"
+
+									alt='광명융합기술교육원 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									광명융합기술교육원</span><span class="address">[14222] 경기도 광명시
+
+									오리로 904</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/semi/index.do">
+
+						<div>
+
+							<div class="thumb-img"><img src="/assets2021/img/main_img/semi.png"
+
+									alt='반도체융합캠퍼스 전경사진'></div>
+
+							<div class="description"><span class="name">
+
+									반도체융합캠퍼스</span><span class="address">[17550] 경기도 안성시
+
+									공도읍 송원길 41-12</span><span>더보기 &gt;</span></div>
+
+						</div>
+
+					</a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">강원도</h3>
+
+			<ul class="campus__info-list" data-position="campusGangwon">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/chuncheon/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/chuncheon.png" alt='춘천캠퍼스 전경사진'></div><div class="description"><span class="name">춘천캠퍼스</span><span class="address">[24409] 강원도 춘천시 동산면 영서로 1290-31</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/wonju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/wonju.png" alt='원주캠퍼스 전경사진'></div><div class="description"><span class="name">원주캠퍼스</span><span class="address">[26406] 강원도 원주시 북원로2425번길 73</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/gangneung/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/gangneung.png" alt='강릉캠퍼스 전경사진'></div><div class="description"><span class="name">강릉캠퍼스</span><span class="address">[25605] 강원도 강릉시 남산초교길 121</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">충청도</h3>
+
+			<ul class="campus__info-list" data-position="campusChoongchung">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/daejeon/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/daejeon.png" alt='대전캠퍼스 전경사진'></div><div class="description"><span class="name">대전캠퍼스</span><span class="address">[34503] 대전광역시 동구 우암로 352-21</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/cheongju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/cheongju.png" alt='청주캠퍼스 전경사진'></div><div class="description"><span class="name">청주캠퍼스</span><span class="address">[28590] 충청북도 청주시 흥덕구 산단로 54</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/asan/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/asan.png" alt='아산캠퍼스 전경사진'></div><div class="description"><span class="name">아산캠퍼스</span><span class="address">[31533] 충청남도 아산시 신창면 행목로 45</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/hongseong/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/hongseong.png" alt='충남캠퍼스 전경사진'></div><div class="description"><span class="name">충남캠퍼스</span><span class="address">[32244] 충청남도 홍성군 홍성읍 충서로 1200</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/chungju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/chungju.png" alt='충주캠퍼스 전경사진'></div><div class="description"><span class="name">충주캠퍼스</span><span class="address">[27324] 충청북도 충주시 국원대로 548</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/bio/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/bio.png" alt='바이오캠퍼스 전경사진'></div><div class="description"><span class="name">바이오캠퍼스</span><span class="address">[32943] 충청남도 논산시 강경읍 동안로112번길 48</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/dasom/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/dasom.png" alt='다솜고등학교 전경사진'></div><div class="description"><span class="name">다솜고등학교</span><span class="address">[27205] 충청북도 제천시 원강저로 94</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">전라도</h3>
+
+			<ul class="campus__info-list" data-position="campusJunla">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/gwangju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/gwangju.png" alt='광주캠퍼스 전경사진'></div><div class="description"><span class="name">광주캠퍼스</span><span class="address">[61099] 광주광역시 북구 하서로 85</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/jb/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/jb.png" alt='전북캠퍼스 전경사진'></div><div class="description"><span class="name">전북캠퍼스</span><span class="address">[54352] 전라북도 김제시 백학제길 154</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/jeonnam/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/jeonnam.png" alt='전남캠퍼스 전경사진'></div><div class="description"><span class="name">전남캠퍼스</span><span class="address">[58542] 전라남도 무안군 청계면 영산로 1854-16</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/iksan/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/iksan.png" alt='익산캠퍼스 전경사진'></div><div class="description"><span class="name">익산캠퍼스</span><span class="address">[54567] 전라북도 익산시 선화로 579</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/suncheon/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/suncheon.png" alt='순천캠퍼스 전경사진'></div><div class="description"><span class="name">순천캠퍼스</span><span class="address">[57975] 전라남도 순천시 기적의도서관1길 41</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/int/"><div><div class="thumb-img"><img src="/assets2021/img/main_img/int.png" alt='신기술교육원 전경사진'></div><div class="description"><span class="name">신기술교육원</span><span class="address">[54853] 전라북도 전주시 덕진구 유상로 20</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/hrd/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/namwon.png" alt='인재원 전경사진'></div><div class="description"><span class="name">인재원</span><span class="address">[55728] 전라북도 남원시 내척길 31</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">경상북도</h3>
+
+			<ul class="campus__info-list" data-position="campusKyoungbuk">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/daegu/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/daegu.png" alt='대구캠퍼스 전경사진'></div><div class="description"><span class="name">대구캠퍼스</span><span class="address">[41765] 대구광역시 서구 국채보상로43길 15</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/gumi/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/gumi.png" alt='구미캠퍼스 전경사진'></div><div class="description"><span class="name">구미캠퍼스</span><span class="address">[39257] 경상북도 구미시 수출대로3길 84</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/namdaegu/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/namdaegu.png" alt='남대구캠퍼스 전경사진'></div><div class="description"><span class="name">남대구캠퍼스</span><span class="address">[42985] 대구광역시 달성군 논공읍 논공로 226</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/pohang/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/pohang.png" alt='포항캠퍼스 전경사진'></div><div class="description"><span class="name">포항캠퍼스</span><span class="address">[37859] 경상북도 포항시 남구 호동로 162</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/yeongju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/yeongju.png" alt='영주캠퍼스 전경사진'></div><div class="description"><span class="name">영주캠퍼스</span><span class="address">[36142] 경북 영주시 가흥로 2</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/yct/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/yct.png" alt='영남융합기술캠퍼스 전경사진'></div><div class="description"><span class="name">영남융합기술캠퍼스</span><span class="address">[41027] 대구광역시 동구 팔공로 222</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/robot/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/robot.png" alt='로봇캠퍼스 전경사진'></div><div class="description"><span class="name">로봇캠퍼스</span><span class="address">[38839] 경상북도 영천시 로봇캠퍼스로1(화룡동)</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">경상남도</h3>
+
+			<ul class="campus__info-list" data-position="campusKyoungnam">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/changwon/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/changwon.png" alt='창원캠퍼스 전경사진'></div><div class="description"><span class="name">창원캠퍼스</span><span class="address">[51518] 경상남도 창원시 성산구 외동반림로 51-88</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/busan/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/busan.png" alt='부산캠퍼스 전경사진'></div><div class="description"><span class="name">부산캠퍼스</span><span class="address">[46550] 부산광역시 북구 만덕대로155번길 99</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/ulsan/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/ulsan.png" alt='울산캠퍼스 전경사진'></div><div class="description"><span class="name">울산캠퍼스</span><span class="address">[44482] 울산광역시 중구 산전길 155</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/dongbusan/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/dongbusan.png" alt='동부산캠퍼스 전경사진'></div><div class="description"><span class="name">동부산캠퍼스</span><span class="address">[46027] 부산광역시 기장군 정관읍 산단4로 2-69</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/jinju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/jinju.png" alt='진주캠퍼스 전경사진'></div><div class="description"><span class="name">진주캠퍼스</span><span class="address">[52766] 경남 진주시 모덕로 299</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/pptc/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/pptc.png" alt='석유화학공정기술교육원 전경사진'></div><div class="description"><span class="name">석유화학공정기술교육원</span><span class="address">울산광역시 남구 테크노산업로81번길 4</span><span >더보기 &gt;</span></div></div></a></li>
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/kapc/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/kapc.png" alt='항공캠퍼스 전경사진'></div><div class="description"><span class="name">항공캠퍼스</span><span class="address">[52549] 경상남도 사천시 대학길 46</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+
+
+		</div>
+
+		<div class="campus-list tab-wrap">
+
+			<h3 class="hidden">제주도</h3>
+
+			<ul class="campus__info-list" data-position="campusJeju">
+
+				<li class="campus__info-item"><a class="campus__info-anchor" target="_blank" title="새창" href="/jeju/index.do"><div><div class="thumb-img"><img src="/assets2021/img/main_img/jeju.png" alt='제주캠퍼스 전경사진'></div><div class="description"><span class="name">제주캠퍼스</span><span class="address">[63243] 제주특별자치도 제주시 산천단동3길 2</span><span >더보기 &gt;</span></div></div></a></li>
+
+			</ul>
+
+		</div>
+
+		<script>
+
+			// 탭 클릭시				
+
+			$('.campus-info .tab-link li').on('click',function () {
+
+				$(this).addClass('active').siblings().removeClass('active');
+
+				$(this).find('a').attr("title","선택됨");
+
+				$(this).siblings('li').find('a').removeAttr("title");
+
+				var index = $(this).index();
+
+				var tabCont = $(this).parents('.tab-container');
+
+				tabCont.find('.tab-wrap').eq(index).addClass('active').siblings().removeClass('active');
+
+				// tab 클릭시 슬라이드 활성화
+
+				$('.campus-list > ul').slick("setPosition");
+
+
+
+				var adjust = 0;
+
+				if( windowWidth >= breakpoint ){
+
+					adjust = 2;
+
+				} else {
+
+				
+
+					adjust = 0;
+
+				}
+
+				var itemLength = $(".campus-list.active > ul .slick-slide").length;
+
+				
+
+				if(itemLength > 3) {
+
+					var playTag = '<button class="play-btn slick-arrow stop" style="" tabindex="0"><span class="icon">일시정지</span></button>';
+
+					$(playTag).prependTo('.campus-list.active');
+
+					$('.campus-list.active .play-btn').on('click', function () {
+
+						if($(this).hasClass('stop') === true) {
+
+						$('.campus-list.active > ul').slick("slickPause", true);
+
+						$(this).removeClass('stop').addClass('play').find('.icon').text('재생');
+
+						}else {
+
+						$('.campus-list.active > ul').slick("slickPlay", true);
+
+						$(this).removeClass('play').addClass('stop').find('.icon').text('일시정지');
+
+						}
+
+					});
+
+				}
+
+				// 탭 클릭시 첫번째 슬라이드로 이동
+
+				$('.campus-list.active > ul').slick('slickGoTo', 0);
+
+				$('.campus-list:not(.active) .play-btn').remove();
+
+			});
+
+
+
+			// 전국 캠퍼스 안내
+
+			$('.campus-list > ul').slick({
+
+				slidesToShow: 3,
+
+				slidesToScroll: 3,
+
+				infinite: true,
+
+				autoplay: true,
+
+				dots:true,
+
+				prevArrow: '<button type="button" class="slick-prev">이전 목록 이동</button>',
+
+				nextArrow: '<button type="button" class="slick-next">다음 목록 이동</button>',
+
+				draggable : true,
+
+				pauseOnHover:false,
+
+				responsive: [
+
+					{
+
+						breakpoint: breakpoint,
+
+						settings: {
+
+							slidesToShow: 1,
+
+							slidesToScroll: 1,
+
+							variableWidth: true
+
+						}
+
+					},
+
+				],
+
+			});
+
+			
+
+			// play button
+
+			var slideCount = $(".campus-list.active .slick-slide:not(.slick-cloned)").length;
+
+			if(slideCount > 3) {
+
+				var playTag = '<button class="play-btn slick-arrow stop" style=""><span class="icon">일시정지</span></button>';
+
+				$(playTag).prependTo('.campus-list.active');
+
+			}
+
+			$('.campus-list.active .play-btn').on('click', function () {
+
+				if($(this).hasClass('stop') === true) {
+
+				$('.campus-list.active > ul').slick("slickPause", true);
+
+				$(this).removeClass('stop').addClass('play').find('.icon').text('재생');
+
+				}else {
+
+				$('.campus-list.active > ul').slick("slickPlay", true);
+
+				$(this).removeClass('play').addClass('stop').find('.icon').text('일시정지');
+
+				}
+
+			});
+
+			
+
+			if($('.campus-list .slick-slide').not('.slick-cloned').length > 6) {
+
+				$('.campus-list .slick-dots').addClass('style2');
+
+			}
+
+
+
+			$('.campus-list.active a,.campus-list.active button').focus(function(){
+
+				$('.campus-list.active').find('.stop').click();
+
+			});
+
+		</script>
+
+	</div>
+
+</section>
+
+<section class="poli-in-story section height-auto">
+
+	<div class="container lazy">
+
+	<h2><span class="em">폴리人</span> 이야기</h2>
+
+	<div class="grid-wrap">
+
+			<div class="dots-wrap">
+
+				<div class="slick-dots-custom-poli">
+
+					<button class="play-btn stop">
+
+						<span class="icon">일시정지</span>
+
+					</button>
+
+				</div>
+
+			</div>
+
+			<div class="poli-in slider">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="/js/kopo/naver_blog.js?vv=3.2.5.10"></script>
+
+</section>
+
+
+
+<style>
+
+section.poli-community .container .sns-links>ul {width: 100%;gap: 1.5em;}
+
+section.poli-community .container .sns-links>ul li {flex: inherit;}
+
+section.poli-community .container .sns-links>ul li img {width: 100%;}
+
+section.poli-community .container .sns-links.pc{display:block;}
+
+section.poli-community .container .sns-links.mo{display:none;}
+
+@media (max-width: 500px) {
+
+	section.poli-community .container .sns-links.pc{display:none;}
+
+	section.poli-community .container .sns-links.mo{display:block;}
+
+}
+
+</style>
+
+<section class="poli-community section height-auto">
+
+	<div class="container lazy">
+
+	<h2>함께하는 <span class="em">소식</span>과 <br class="for-mobile"><span class="em">다양한 활동</span>을 소개합니다</h2>
+
+	<div class="sns-links pc">
+
+			<ul>
+
+				<li><a title="새창" target="_blank" href="https://www.youtube.com/channel/UCrIrj8hjj48Yulj9_oeYApQ"><img src="/images/social/ico3_youtube.png" alt="유튜브"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://blog.naver.com/love_kopo"><img src="/images/social/ico3_naverblog.png" alt="네이버블로그"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://www.facebook.com/koposns"><img src="/images/social/ico3_facebook.png" alt="facebook"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://www.instagram.com/korea_polytechnics"><img src="/images/social/ico3_instagram.png" alt="인스타그램"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://pf.kakao.com/_MxeQxoxb"><img src="/images/social/ico3_kakao.png" alt="카카오톡상담"></a></li>
+
+			</ul>
+
+		</div>
+
+		<div class="sns-links mo">
+
+			<ul>
+
+				<li><a title="새창" target="_blank" href="https://www.youtube.com/channel/UCrIrj8hjj48Yulj9_oeYApQ"><img src="/images/social/ico3m_youtube.png" alt="유튜브"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://blog.naver.com/love_kopo"><img src="/images/social/ico3m_naverblog.png" alt="네이버블로그"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://www.facebook.com/koposns"><img src="/images/social/ico3m_facebook.png" alt="facebook"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://www.instagram.com/korea_polytechnics"><img src="/images/social/ico3m_instagram.png" alt="인스타그램"></a></li>
+
+				<li><a title="새창" target="_blank" href="https://pf.kakao.com/_MxeQxoxb"><img src="/images/social/ico3m_kakao.png" alt="카카오톡상담"></a></li>
+
+			</ul>
+
+		</div>
+
+
+
+		<div class="banners">
+
+			<div class="large-type">
+
+				<div class="video-wrap">
+
+				<a  class="slot" href="https://youtu.be/eWUohUqNGQw?si=HTwGQwiJZcoaEkwD" target="_blank" title="새창">
+
+							<div class="thumb">
+
+							<img src='https://img.youtube.com/vi/eWUohUqNGQw/hqdefault.jpg' alt="대표 홍보영상:제16회 미래내모습그리기 대회" />
+
+								</div>
+
+							<div class="title">
+
+								제16회 미래내모습그리기 대회</div>
+
+						</a>
+
+					</div>
+
+				<div style="position:relative;">
+
+				<!-- 하단 좌측배너 S -->
+
+				<div class="slide-banner sub-banners-bottom">
+<div class="item">
+				<a class="links" style="cursor: pointer;" href="https://www.clean.go.kr/index.es?sid=a1" target="_blank" title="새 창"><img alt="공공기관 채용비리를 신고해주세요! 신고상담 국민콜 110 또는 1398" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000265542" /></a></div>
+			</div>
+</div>
+
+				<!-- //하단 좌측배너 E -->
+
+			</div>
+
+			<div class="horizon-scroll style2 fb_list_2021">
+
+				</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<script>
+
+//fullpage -> pageable로 대체
+
+	var TABLE =         'fp-table';
+
+	var TABLE_CELL =    'fp-tableCell';
+
+	var SECTION =       'fp-section';
+
+	var SECTION_SEL =   '.' + SECTION;
+
+	var $window = $(window);
+
+	var $document = $(document);
+
+	var windowWidth = $(window).width();
+
+	var windowsHeight = $window.height();
+
+	var breakpoint = 1024;
+
+	var currentSection;
+
+	var $header;
+
+	var pageable;
+
+	function pgSetHeader() {
+
+		//console.log(pageable.index);
+
+		if (windowWidth > breakpoint) {
+
+			var currIndex = pageable.index;
+
+			if (currIndex === 0) {
+
+				$header.fadeIn();
+
+			} else {
+
+				$header.fadeOut();
+
+			}
+
+		}
+
+	}
+
+	function pgInit() {
+
+		pageable = new Pageable(".fullpage", {
+
+			animation: 400,
+
+			delay: 0,
+
+			onBeforeStart: function() {
+
+				pgSetHeader();
+
+				this.pages.forEach(function(page, i){
+
+					page.classList.remove("pg-active");
+
+				});
+
+				if(pageable != null) {
+
+					var currIndex = pageable.index;
+
+					var sections =  document.querySelectorAll(SECTION_SEL);
+
+					currentSection = $(sections).eq(currIndex);
+
+					currentSection.addClass("active").siblings().removeClass("active");
+
+				}
+
+			}
+
+		});
+
+		/*
+
+		pageable.on("scroll.end", function(){
+
+		});*/
+
+		$(".pg-pips").attr("id","fp-nav");
+
+		$(".pg-pips").addClass("right");
+
+		function setPgPips() {
+
+			$(".section").each(function (i, item) {
+
+				var pip_title="";
+
+				if($(this).hasClass("main-banner-wrap")) {
+
+					pip_title="메인 배너";
+
+				} else if($(this).hasClass("news")) {
+
+					pip_title="폴리텍 소식";
+
+				} else if($(this).hasClass("campus-info")) {
+
+					pip_title="전국 캠퍼스 안내";
+
+				} else if($(this).hasClass("poli-in-story")) {
+
+					pip_title="폴리인 이야기";
+
+				} else if($(this).hasClass("poli-community")) {
+
+					pip_title="SNS 영역";
+
+				} else if($(this).hasClass("home-footer")) {
+
+					pip_title="Footer 영역";
+
+				}
+
+				if(pip_title != "") {
+
+					$(".pg-pips ul li a").eq(i).attr("title", pip_title);
+
+					$(".pg-pips ul li a span").eq(i).html("<p class='blind'>"+pip_title+"</p>");
+
+				}
+
+			});
+
+		}
+
+		setPgPips();
+
+		pgSetHeader();
+
+	}
+
+	$(function () {		
+
+		$header = $('header, .gnb-wrap');
+
+		function getAnchorarray() {
+
+			var cnt = 1;
+
+			$(".section").each(function (i, item) {
+
+				$(this).attr("data-anchor", "sec"+(cnt++));
+
+				$(this).addClass("fp-section active");
+
+			});
+
+			$(SECTION_SEL).each(function(index){
+
+				var section = $(this);
+
+				if(!section.hasClass(TABLE)){
+
+					var wrapper = $('<div class="' + TABLE_CELL + '" />');//.height(windowsHeight);
+
+					section.addClass(TABLE).wrapInner(wrapper);
+
+				}
+
+			});
+
+
+
+		}		
+
+		getAnchorarray();
+
+		
+
+		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+		//모바일 Device 체크가 안되는게 있어서 터치여부도 같이 체크하게 보완
+
+		const isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+
+		if(!isMobile && isTouchDevice) {
+
+			isMobile = true;
+
+		}		
+
+		if(windowWidth > breakpoint) {
+
+			if (!isMobile) {
+
+				pgInit();
+
+			} else {
+
+				$(".fp-section").each(function (i, item) {
+
+					if($(this).hasClass("main-banner-wrap")) {
+
+					} else if($(this).hasClass("news")) {
+
+						$(this).css("height",windowsHeight+"px");
+
+					} else if($(this).hasClass("campus-info")) {
+
+						$(this).css("height",windowsHeight+"px");
+
+					} else if($(this).hasClass("poli-in-story")) {
+
+						$(this).css("height",windowsHeight+"px");
+
+					} else if($(this).hasClass("poli-community")) {
+
+						$(this).css("height",windowsHeight+"px");
+
+					} else if($(this).hasClass("home-footer")) {
+
+					}
+
+				});
+
+			}
+
+		}
+
+
+
+		window.addEventListener("resize", function () {
+
+			windowWidth = $(window).width();
+
+			setTimeout(function () {
+
+				if(!isMobile && windowWidth > breakpoint) {
+
+					if(!$("#pg-div").hasClass("pg-container")) {
+
+						pgInit();
+
+					}
+
+				} else {
+
+					pageable.destroy();//$(".pg-pips").hide();
+
+				}
+
+			}, 300);
+
+		});
+
+	});
+
+		
+
+	$(document).keyup(function(){
+
+		$("section a:nth-of-type(1),section button:nth-of-type(1)").focus(function(){
+
+			$(this).parents('section').addClass('active');
+
+		});
+
+	});
+
+</script><section class="home-footer section height-auto">
+
+	<footer class="footer">
+
+		<h3 class="hidden">한국폴리텍대학 푸터</h3>
+
+		<a class="footer__logo" href="/index.do"><img src="/assets2021/img/logo_header_wh.png" alt="한국폴리텍대학"></a>
+
+		<div class="footer__wrap">
+
+			<nav class="footer__nav">
+
+				<ul class="footer__nav-list">
+
+					<li class="footer__nav-item"><a class="footer__nav-anchor" href="/content.do?menu=8149">찾아오시는 길</a></li>
+
+					<li class="footer__nav-item"><a class="footer__nav-anchor" href="/content.do?menu=1166">전화번호안내</a></li>
+
+					<li class="footer__nav-item"><a class="footer__nav-anchor" href="/content.do?menu=1685">이메일무단수집거부</a></li>
+
+						<li class="footer__nav-item"><a class="footer__nav-anchor" href="/content.do?menu=1684" style="font-size: 1.1em;font-weight: bold;color: white;">개인정보처리방침</a></li>
+
+					<li class="footer__nav-item"><a class="footer__nav-anchor" href="/board.do?menu=137">홈페이지오류신고</a></li>
+
+					<li class="footer__nav-item"><a class="footer__nav-anchor" href="/board.do?menu=135">민원광장</a></li>
+
+				</ul>
+
+			<ul class="footer__public-list">
+
+					<li class="footer__public-item"><a class="footer__public-anchor" href="/content.do?menu=127">경영공시</a></li>
+
+					<li class="footer__public-item"><a class="footer__public-anchor" href="#" title="새창" target="blank" onclick="disclosurePop(); return false;">대학정보공시</a></li>
+
+				</ul>
+
+			</nav>
+
+			<div class="footer__info-wrap">
+
+				<div class="footer__info">
+
+					<address class="footer__info-address">
+
+					[21417] 인천광역시 부평구 무네미로 478&nbsp;&nbsp;<span 
+
+						style="font-size: 1.1em;font-weight: bold;color: white;">TEL 032-650-6780</span>
+
+					&nbsp;&nbsp;FAX 032-650-6729<br/>
+
+						<small class="footer__info-copy">COPYRIGHT 2010 BY KOREA POLYTECHNICS. ALL RIGHTS RESERVED.</small>
+
+					</address>
+
+					<p class="footer__info-small">본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사처벌 됨을 유념하시기 바랍니다.</p>
+
+					</div>
+
+				<div class="footer__etc">
+
+				<ul class="footer__awarded-list">
+
+						<li class="footer__awarded-item"><a target="_blank" title="새창" href="https://www.moef.go.kr/nw/nes/detailNesDtaView.do?searchNttId1=MOSF_000000000066858"><img src="/images/main/ico_budget.png" alt="2024년 예산안"><strong class="footer__awarded-title">2024년 예산안</strong></a></li>
+
+						<li class="footer__awarded-item"><a target="_blank" title="새창" href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110"><img src="/images/main/ico_wa.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)"><strong class="footer__awarded-title">웹접근성 인증</strong></a></li>
+
+						<li class="footer__awarded-item"><a target="_blank" title="새창" href="http://www.i-award.or.kr/Web/"><img src="/images/main/icon_waf.png" alt="2021웹어워드코리아최우수상수상로고"><strong class="footer__awarded-title">2021 웹어워드코리아 최우수상 수상</strong></a></li>
+
+					</ul>
+
+				<ul class="footer__social-list">
+
+						<li class="footer__social-item"><a title="새창" target="_blank" href="https://www.facebook.com/koposns"><img src="/images/social/ico_facebook_gray.png" alt="페이스북"></a></li>
+
+						<li class="footer__social-item"><a title="새창" target="_blank" href="https://blog.naver.com/love_kopo"><img src="/images/social/ico_naverblog_gray.png" alt="네이버블로그"></a></li>
+
+						<li class="footer__social-item"><a title="새창" target="_blank" href="http://cafe.naver.com/lovekopo"><img src="/images/social/ico_navercafe_gray.png" alt="네이버카폐"></a></li>
+
+						<li class="footer__social-item"><a title="새창" target="_blank" href="/board.do?menu=124"><img src="/images/social/ico_magazine_gray.png" alt="한국폴리텍대학사보"></a></li>
+
+					</ul>
+
+				</div>
+
+				
+
+				<div class="footer__banner">
+<div class="footer__banner-list "><!-- 배너4 -->
+             <a class="footer__banner-item" href="http://www.gov.kr" target="_blank" title="새 창" ><img alt="대한민국 정부 대표포털 정부서비스 민원24 정책·정보" src="/images/main/default/banner_L04.jpg"></a>
+       </div>
+    </div>
+</div>
+
+		</div>
+
+	</footer>
+
+</section>
+
+<!-- AceCounter Log Gathering Script V.71.2010011401 -->
+
+<script>
+
+if (typeof _GUL == 'undefined') {
+
+	var _GCD = '38'; // gcode
+
+	var _GUL = 'weblog.kopo.ac.kr:9443';var _GPT='9443'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;
+
+ 	document.writeln("<scr"+"ipt language='javascript' src='/js/acecounter_V70.js'></scr"+"ipt>");
+
+}
+
+</script>
+
+<noscript><img src='https://weblog.kopo.ac.kr:9443/?uid=38&je=n&' alt="noscript" style="border:0;" width=0 height=0 /></noscript>
+
+<!-- AceCounter Log Gathering Script End -->
+
+<script>
+
+ $(document).ready(function(){
+
+	$.each($("map area"), function(index, item) {
+
+		var area_title = $(this).attr("title");
+
+		var area_target = $(this).attr("target");
+
+		if(area_target != undefined && (area_target == "_blank" || area_target == "_new")) 
+
+		{
+
+			if(area_title == undefined || $.trim(area_title) == "")
+
+			{
+
+				$(this).attr("title", "새창");
+
+			}
+
+		}
+
+	});
+
+	
+
+	var id_cu = $('#contents_upper').length;
+
+	var id_cw = $('#contentsWrap').length;
+
+	var id_cs = $('#contents').length;
+
+	if(id_cu == 1) {
+
+		$('.skip_navi>a:first-child').attr('href','#contents_upper');
+
+	} else if(id_cw == 1) {
+
+		$('.skip_navi>a:first-child').attr('href','#contentsWrap');
+
+	} else if(id_cs == 1) {
+
+		$('.skip_navi>a:first-child').attr('href','#contents');
+
+	}
+
+});
+
+</script></div>
+
+</div>
+
+<style>
+.pop-slider :focus-visible {outline: 2px solid #ff0000;}
+.modal-wrap .pop-slider .slick-slide a:focus {outline: 2px solid #ff0000;}
+</style>
+<div class="modal-wrap is-visible popup01">
+	<div class="modal">
+		<div class="pop-slider">
+			<ul>
+<li class="main__PopBanner">
+                   <a class="home-aside__item" style="cursor: pointer;" href="https://www.youtube.com/@koposns" target="_blank" title="새 창"><img alt="100만 쇼츠 제작기 Ep.9 전기과 대놓고 100만 매주 우러요일 낮 1시  다음전공은 어디?" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000387459" /></a></li>
+               <li class="main__PopBanner">
+                   <img alt="2024학년도 단기과정 모집중 하이테크 과정 전문기술 과정 신중년 특화과정 여성재취업 과정" src="/cmm/fms/kopoImg.do?atchFileId=FILE_000000000378570" usemap="#BANMST_0000000019660"/>
+                            <map name="BANMST_0000000019660">
+                                <area alt="하이테크 과정" coords="25,335,252,447" href="https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=34" target="_blank" /><area alt="전문기술 과정" coords="268,335,495,447" href="https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=31" target="_blank" /><area alt="신중년 특화과정" coords="25,463,252,575" href="https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=33" target="_blank" /><area alt="여성재취업 과정" coords="268,463,495,575" href="https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=42" target="_blank" /></map>
+                       </li>
+               </ul>
+        <div class="input-box">
+            <input type="checkbox" id="shutCheckbox">
+            <label for="shutCheckbox">오늘 하루 열지 않기</label>
+        </div>
+    </div>
+    <button class="btn-close notice-banner__btn" onclick="mainPopupClose('.popup01');"><span class="icon blind">닫기</span></button>
+    <div class="mobile-btn">
+        <button onclick="mainPopupClose('.popup01', 'todayCloseY');">오늘 하루 열지 않기</button>
+        <button class="btn-close" onclick="mainPopupClose('.popup01');">닫기</button>
+    </div>
+</div>
+<script>
+    if($('.main__PopBanner img').length > 1) {
+        $('.pop-slider > ul').slick({
+            slidesToShow: 2,
+			slidesToScroll: 2,
+            arrows : true,
+            autoplay:true,
+            dots : true,
+            infinite: false,
+            prevArrow: '<button type="button" class="slick-prev">이전</button>',
+            nextArrow: '<button type="button" class="slick-next">다음</button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
+        }).on('setPosition', function(event, slick, currentSlide){
+            var $slideItem = $('.slick-slide');
+            $slideItem.each(function (){
+                var $this = $(this);
+                var isActive = $this.hasClass('slick-active');
+                if (isActive == true) {
+                    var imgUsemap = $this.find('img').attr('usemap');
+                    if (typeof imgUsemap == "string") {
+                    imgUsemap = imgUsemap.replace("#", "");
+                    $this.find("map[name=" + imgUsemap + "] area").addClass("active").attr("tabindex", "0");
+                    }
+                } else {
+                    $this.find("map area").removeClass("active").attr("tabindex", "-1");
+                }
+            })
+			setTimeout(function() {
+				if($('.pop-slider .slick-dots .play-btn').length == 0) {
+					$('.pop-slider .slick-dots').append('<button class="play-btn stop"><span class="icon">일시정지</span></button>');
+				}
+			}, 100);
+        });
+        $('.pop-slider .slick-dots').append('<button class="play-btn stop"><span class="icon">일시정지</span></button>');
+  
+        $('.pop-slider .play-btn').on('click', function () {
+            if($(this).hasClass('stop') === true) {
+            $('.pop-slider > ul').slick("slickPause", true);
+            $(this).removeClass('stop').addClass('play').find('.icon').text('재생');
+            }else {
+            $('.pop-slider > ul').slick("slickPlay", true);
+            $(this).removeClass('play').addClass('stop').find('.icon').text('일시정지');
+            }
+        });
+
+        $('.pop-slider a,.pop-slider button').focus(function(){
+            $('.pop-slider').find('.stop').click();
+        });
+
+    }else {
+        $('.pop-slider').parent('.modal').addClass('no-slider');
+    }
+var mainPopCnt = '2';
+// 팝업
+function mainPopupOpen(pop) {
+	if (mainPopCnt == 0){
+		if(cpLang == "ko") {
+			alert('등록된 팝업배너가 없습니다.');
+		} else {
+			return;
+		}
+	} else {
+		$(pop).removeClass('is-visible');
+	}
+    
+    // 레이어 팝업 focus
+    var lpObj = $(pop);
+    var lpObjTabbable = lpObj.find("button, select, iframe, textarea, a, input, area");
+    var lpObjTabbableFirst = lpObjTabbable && lpObjTabbable.first();
+    var lpObjTabbableLast = lpObj.find('.btn-close');
+    var tabDisable;
+    
+    $(this).blur();
+    
+    lpObjTabbable.length > 0 ? lpObjTabbableLast.focus().on("keydown", function(event) { 
+    // 레이어 열리자마자 초점 받을 수 있는 첫번째 요소로 초점 이동
+        if (!event.shiftKey && (event.keyCode || event.which) === 9) {
+            // Shift + Tab키 : 초점 받을 수 있는 첫번째 요소에서 마지막 요소로 초점 이동
+            event.preventDefault();
+            lpObjTabbableFirst.focus();
+            
+        }
+    }) : lpObj.attr("tabindex", "0").focus().on("keydown", function(event){
+        tabDisable = true;
+        if ((event.keyCode || event.which) === 9) event.preventDefault();
+        // Tab키 / Shift + Tab키 : 초점 받을 수 있는 요소가 없을 경우 레이어 밖으로 초점 이동 안되게
+    });
+
+    lpObjTabbableFirst.on("keydown", function(event) {
+        if (event.shiftKey && (event.keyCode || event.which) === 9) {
+            // Tab키 : 초점 받을 수 있는 마지막 요소에서 첫번째 요소으로 초점 이동
+            event.preventDefault();
+            lpObjTabbableLast.focus();
+        }
+    });
+
+    // Esc키 : 레이어 닫기
+    $(document).on("keydown", function(event) {
+        var keyType = event.keyCode || event.which;
+      
+        if (keyType === 27 && !lpObj.hasClass("is-visible")) {
+            lpObj.addClass('is-visible');
+
+            // 팝업 버튼 초점이동
+            $('.mainPopCnt').focus();
+            
+        }
+    });
+
+    // 오늘 하루 열지 않기 버튼 enter
+    lpObj.find('.input-box button').on("keydown", function(event) {
+        var keyType = event.keyCode || event.which;
+      
+        if (keyType === 13 ) {
+            console.log($(this));
+            $(this).find('label').click();
+        }
+    });
+
+}
+
+function mainPopupClose(pop, isTodayClose) {
+	//console.log(cpNm+">>>>>>>>isTodayClose:"+isTodayClose);
+	//console.log(">>>>>>>>$('#shutCheckbox').is(':checked'):"+$('#shutCheckbox').is(':checked'));
+	if (isTodayClose == 'todayCloseY' || $('#shutCheckbox').is(':checked')) {
+		kopoSetCookie(cpNm+"MainPopBanner","done",24);  //시간을 -24로 줄경우 쿠키제거	
+	}
+
+    setTimeout(function(){
+		$(pop).addClass('is-visible');
+		//classToggle(true);
+		$('.main-banner.slider').slick('slickGoTo', 0);
+	}, 300);
+
+    // 팝업 버튼 초점이동
+    $('.mainPopCnt').focus();
+}
+(function(){
+    var noticeBannerBool = false;
+	var $noticeBanner = $('.main__PopBanner');
+	//console.log(">>>>>>>>$noticeBanner.length:"+$noticeBanner.length);
+	//var mainPopCnt = $noticeBanner.length;
+	if(mainPopCnt == '') mainPopCnt='0';
+	var mainPopCntMoreTxt = "";
+	if(mainPopCnt > 9) {
+		mainPopCnt = 9;
+		mainPopCntMoreTxt = "+";
+	}
+	if(cpLang == "ko") {
+		$('.mainPopCnt').text("팝업 "+mainPopCnt+"건"+mainPopCntMoreTxt);
+	} else {
+		$('.mainPopCnt').text("POPUP "+mainPopCnt+mainPopCntMoreTxt);
+	}
+	$('.mainPopCnt').attr("data-cnt", mainPopCnt);
+
+	if (mainPopCnt == 0){
+		noticeBannerBool = false;
+		return;
+	}
+
+	noticeBannerBool = true;
+	//console.log(kopoGetCookie(cpNm+"MainPopBanner"));
+	if("done" != kopoGetCookie(cpNm+"MainPopBanner")) {		
+		if(mainPopCnt > 0) {
+			$('.mainPopCnt').trigger("click");
+		}
+	}
+
+})();
+	</script>
+</div>
+
+<style>
+.sch-pop .sandan-tit {display: flex;justify-content: space-around;max-width: 50rem;margin: 0 auto;padding-bottom: 1.875rem; }
+.mo-visible .info-btn {display: none;}
+.modal-wrap .modal.txt-box .content .txt {word-break: keep-all;}
+
+.sch-pop .pc-visible>.contents>div {width: 13.5rem;padding-top: 2.75rem;} 
+.sch-pop .pc-visible>.contents .btn-box li {margin-bottom: 1.0rem;}
+.sch-pop .pc-visible>.contents .btn-box li.active a {text-shadow: 0 0 20px #f28a17, 0 0 10px #f28a17, 0 0 8px #f28a17, 0 0 6px #f28a17, 0 0 6px #f28a17;} 
+.sch-pop .pc-visible>.contents .btn-box.style3 li {margin-left: 0.525rem;margin-right: 0.525rem;} 
+.sch-pop .pc-visible>.contents .btn-box.style3 li a {color:white;} 
+.sch-pop .pc-visible>.contents .last-depth .last {padding: 3.75rem 1.8125rem 0;} 
+.sch-pop .pc-visible>.contents .pad-bo {padding-bottom:35rem;}
+.mo_br {display: none;}
+.mo-visible .mo_br {display: block;}
+</style>
+
+<!-- 폴리텍과정찾기 popup -->
+<div class="sch-pop hidden">
+
+	<!-- 과정찾기 mobile -->
+	<div class="mo-visible">
+		<div class="head">
+			<h2>나에게 맞는<br>폴리텍과정찾기</h2>
+			<button class="close" onclick="popClose('.sch-pop')">
+				<span class="ico-close">닫기</span>
+			</button>
+		</div>
+		<div class="contents">
+			<div class="depth active hover">
+				<div class="label-box">
+					지역별
+				</div>
+				<ul class="btn-box" id="co_1depth-MO">
+					<li data-option="AREA"><a href="#">지역별</a></li>
+					<li data-option="CAMPUS"><a href="#">캠퍼스별</a></li>
+					<li data-option="CRCLM"><a href="#">과정별</a></li>
+					<li data-option="AGE"><a href="#">대상별</a></li>
+					<li data-option="BUNYA"><a href="#">분야별</a></li>
+					<li data-option="SANDAN"><a href="#">산학협력교육과정</a></li>
+				</ul>
+			</div>
+			<div class="depth">
+				<div class="label-box">
+					수도권
+				</div>
+				<ul class="btn-box" id="co_2depth-MO">
+					<li>수도권</li>
+				</ul>
+			</div>
+			<div class="depth">
+				<div class="label-box">
+					서울정수캠퍼스
+				</div>
+				<ul class="btn-box" id="co_3depth-MO">
+					<li>캠퍼스</li>
+				</ul>
+			</div>
+			<div class="depth">
+				<div class="label-box">
+					2년제학위과정
+				</div>
+				<ul class="btn-box" id="co_4depth-MO">
+					<li>2년제학위과정<button onclick="searchInfoPopupOpen('.pop01'); return false;" class="info-btn">설명</button></li>
+				</ul>
+			</div>
+			<div class="depth last" id="campusResult-MO">
+				<div class="label-box">
+					학과별
+				</div>
+				<ul class="btn-box2">
+					<li class="wonseoUrl"><a href="#"><span class="icon01"></span>원서접수</a></li>
+					<li class="ipsiUrl"><a href="#"><span class="icon02"></span>모집요강</a></li>
+					<li><a href="https://p.kopo.ac.kr/ipsi" target="_blank" title="새창">
+						<span class="icon03"></span>합격자조회</a></li>
+					<li><a href="https://www.kebhana.com/service/univRegAmtNtfshInquiry.do#//HanaBank" target="_blank" title="새창">
+						<span class="icon04"></span>고지서출력/<br class="mo_br" />납부확인</a></li>
+				</ul>
+				<ul class="btn-box style3" id="hakwaResult-MO">
+					<li>검색된 자료가 없습니다.</li>
+				</ul>
+			</div>
+			<div class="depth" id="sandanResult-MO">  
+				<div class="table-box-wrap">
+					<div class="table-box">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 과정찾기 mobile -->
+
+	<!-- 과정찾기 pc -->
+	<div class="pc-visible">
+		<div class="head">
+			<div class="tag-wrap">
+				<span class="placeholder">나에게 맞는 폴리텍과정 찾기
+				</span>
+				<!-- <span class="tag">#수도권</span> -->
+				<span class="ico-sch"></span>
+			</div>
+			<button class="close" onclick="popClose('.sch-pop')">
+				<span class="ico-close">닫기</span>
+			</button>
+			<ul class="step-box">
+				<li id="depth1Tit" class="active">지역</li>
+				<li id="depth2Tit">캠퍼스</li>
+				<li id="depth3Tit">교육과정</li>
+				<li id="depth4Tit">학과</li>
+			</ul>
+			<div id="step-desc" class="hidden"></div>
+		</div>
+		<div class="contents">
+			<div class="depth active">
+				<ul class="btn-box" id="co_1depth">
+					<li class="active" data-option="AREA"><a href="#">지역별</a></li>
+					<li data-option="CAMPUS"><a href="#">캠퍼스별</a></li>
+					<li data-option="CRCLM"><a href="#">과정별</a></li>
+					<li data-option="AGE"><a href="#">대상별</a></li>
+					<li data-option="BUNYA"><a href="#">분야별</a></li>
+					<li data-option="SANDAN"><a href="#">산학협력교육과정</a></li>
+				</ul>
+			</div>
+			<div class="depth active">
+				<ul class="btn-box" id="co_2depth">
+					<li>수도권</li>
+				</ul>
+			</div>
+			<div class="depth">
+				<ul class="btn-box" id="co_3depth">
+					<li>캠퍼스</li>
+				</ul>
+			</div>
+
+			<div class="depth">
+				<ul class="btn-box" id="co_4depth">
+					<li>2년제학위과정<button onclick="searchInfoPopupOpen('.pop01', this); return false;" class="info-btn">설명</button></li>
+				</ul>
+			</div>
+
+			<div class="last-depth" id="campusResult">
+				<div class="info-txt">
+					<span class="txt">지역을 선택해주세요!</span>
+				</div>
+				<div class="last">
+					<ul class="btn-box2">
+						<li class="wonseoUrl"><a href="#" target="_blank" title="새창">원서접수</a></li>
+						<li class="ipsiUrl"><a href="#" target="_blank" title="새창">모집요강</a></li>
+						<li><a href="https://p.kopo.ac.kr/ipsi" target="_blank" title="새창">합격자조회</a></li>
+						<li><a href="https://www.kebhana.com/service/univRegAmtNtfshInquiry.do#//HanaBank" target="_blank" title="새창">고지서출력/납부확인</a></li>
+					</ul>
+					<ul class="btn-box style3" id="hakwaResult">
+						<li>검색된 자료가 없습니다.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="last-depth" id="sandanResult">
+				<div class="info-txt">
+					<span class="txt">캠퍼스 산학협력처</span>를 선택해주세요!
+				</div>
+				<div class="last">
+					<div class="sandan-tit" style="font-size: 24px;">
+						캠퍼스 산학협력처를 선택해주세요!
+					</div>
+					<div class="table-box-wrap">
+						<!-- span class="sort">접수중</span -->
+						<div class="table-box">
+							<div class="item">
+								<h3>Ⅰ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/jungsu/index.do" target="_blank" title="새창">서울정수</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/kangseo/index.do" target="_blank" title="새창">서울강서</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/seongnam/index.do" target="_blank" title="새창">성남</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/jeju/index.do" target="_blank" title="새창">제주</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅱ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/incheon/index.do" target="_blank" title="새창">인천</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/namincheon/index.do" target="_blank" title="새창">남인천</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/hwaseong/index.do" target="_blank" title="새창">화성</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅲ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/chuncheon/index.do" target="_blank" title="새창">춘천</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/wonju/index.do" target="_blank" title="새창">원주</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/gangneung/index.do" target="_blank" title="새창">강릉</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅳ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/daejeon/index.do" target="_blank" title="새창">대전</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/cheongju/index.do" target="_blank" title="새창">청주</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/asan/index.do" target="_blank" title="새창">아산</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/chungnam/index.do" target="_blank" title="새창">충남</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/chungju/index.do" target="_blank" title="새창">충주</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅴ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/gwangju/index.do" target="_blank" title="새창">광주</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/jb/index.do" target="_blank" title="새창">전북</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/jeonnam/index.do" target="_blank" title="새창">전남</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/iksan/index.do" target="_blank" title="새창">익산</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/suncheon/index.do" target="_blank" title="새창">순천</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅵ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/daegu/index.do" target="_blank" title="새창">대구</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/gumi/index.do" target="_blank" title="새창">구미</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/namdaegu/index.do" target="_blank" title="새창">남대구</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/pohang/index.do" target="_blank" title="새창">포항</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/yeongju/index.do" target="_blank" title="새창">영주</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/yct/index.do" target="_blank" title="새창">영남융합기술</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>Ⅶ대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/changwon/index.do" target="_blank" title="새창">창원</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/busan/index.do" target="_blank" title="새창">부산</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/ulsan/index.do" target="_blank" title="새창">울산</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/dongbusan/index.do" target="_blank" title="새창">동부산</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/jinju/index.do" target="_blank" title="새창">진주</a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<h3>특성화대학</h3>
+								<ul>
+									<li><a href="https://sanhak.kopo.ac.kr/bio/index.do" target="_blank" title="새창">바이오</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/kapc/index.do" target="_blank" title="새창">항공</a></li>
+									<li><a href="https://sanhak.kopo.ac.kr/semi/index.do" target="_blank" title="새창">반도체융합</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 과정찾기 pc -->
+	<div id="BUNYA_LIST" class="hidden">
+		<li data-option='SERS004'><a href="#">기계설계 계열</a></li>
+		<li data-option='SERS001'><a href="#">건축 계열</a></li>
+		<li data-option='SERS002'><a href="#">금형 계열</a></li>
+		<li data-option='SERS003'><a href="#">기계 계열</a></li>
+		<li data-option='SERS005'><a href="#">디자인 계열</a></li>
+		<li data-option='SERS006'><a href="#">미디어 계열</a></li>
+		<li data-option='SERS007'><a href="#">바이오 계열</a></li>
+		<li data-option='SERS008'><a href="#">보건의료 계열</a></li>
+		<li data-option='SERS009'><a href="#">산업설비 계열</a></li>
+		<li data-option='SERS010'><a href="#">섬유패션 계열</a></li>
+		<li data-option='SERS012'><a href="#">신소재 계열</a></li>
+		<li data-option='SERS014'><a href="#">자동차 계열</a></li>
+		<li data-option='SERS015'><a href="#">자동화 계열</a></li>
+		<li data-option='SERS016'><a href="#">전기 계열</a></li>
+		<li data-option='SERS017'><a href="#">전자 계열</a></li>
+		<li data-option='SERS018'><a href="#">정보통신IT 계열</a></li>
+		<li data-option='SERS020'><a href="#">주얼리 계열</a></li>
+		<li data-option='SERS023'><a href="#">환경 계열</a></li>
+		<li data-option='SERS024'><a href="#">ICT융합 계열</a></li>
+		<li data-option='SERS025'><a href="#">특성화 계열</a></li>
+	</div>
+<form name="cource_search" id="cource_search">
+	<input type="hidden" name="searchType" value="AREA">
+	<input type="hidden" name="depthID">
+	<input type="hidden" name="DEPTH1">
+	<input type="hidden" name="DEPTH2">
+	<input type="hidden" name="DEPTH3">
+	<input type="hidden" name="DEPTH4">
+	<input type="hidden" name="setCampus">
+</form>
+</div>
+
+
+<div class="modal-wrap is-visible pop01" id="crclmInfoPop">
+	<div class="modal txt-box">
+		<div class="head">과정</div>
+		<div class="content"><p class="txt">설명</p></div>
+		<div class="btn-wrap">
+			<a href="#" onclick="searchInfoPopupClose('.pop01'); return false;" class="btn-chk">확인</a>
+		</div>
+	</div>
+</div>
+<!-- // 폴리텍과정찾기 popup -->
+
+<script>
+// 설명팝업
+function searchInfoPopupOpen(pop, crclmInfo, obj) {
+	$('#crclmInfoPop .head').text($(obj).parent().text().replace("설명",""));
+	$('#crclmInfoPop .content .txt').text(crclmInfo);
+	$(pop).removeClass('is-visible');
+	$('#crclmInfoPop .btn-chk').focus();
+	$(obj).addClass('focusbox');
+
+	// 팝업 열렸을 때 고정
+	$(pop+' .btn-chk').off("keydown").on("keydown", function(event) { 
+		var keyType = event.keyCode || event.which;
+		// 포커스 고정
+		if (keyType === 9 && !$(pop).hasClass("is-visible")) {
+			event.preventDefault();
+			$(pop+' .btn-chk').focus();
+		}
+	});
+}
+
+function searchInfoPopupClose(pop) {
+	$(pop).addClass('is-visible');
+	$('.focusbox').focus().removeClass('focusbox');
+}
+
+var area_tit = new Array('지역','캠퍼스','과정');
+var campus_tit = new Array('캠퍼스','과정','세부과정');
+var crclm_tit = new Array('과정','세부과정','캠퍼스');
+var age_tit = new Array('대상','과정','캠퍼스');
+var bunya_tit = new Array('분야','과정','캠퍼스');
+var selectLItxt = "지역별";
+var curr_campusId = "";
+
+	$(function () {
+		function isEndWithConsonant(korStr) {
+			const finalChrCode = korStr.charCodeAt(korStr.length - 1);
+			// 0 = 받침 없음, 그 외 = 받침 있음
+			const finalConsonantCode = (finalChrCode - 44032) % 28;
+			return finalConsonantCode !== 0;
+		}		
+		$('#sandanResult-MO .table-box').html($('#sandanResult .table-box').html());
+		function setStepTitle(arr) {
+			$('#depth1Tit').text(arr[0]);
+			$('#depth2Tit').text(arr[1]);
+			$('#depth3Tit').text(arr[2]);
+			$('#depth4Tit').text(arr[3]);
+			var titStr = $('#depth1Tit').text();
+			$(".sch-pop .pc-visible .info-txt .txt").text(titStr+(isEndWithConsonant(titStr) ? "을" : "를")+" 선택해주세요!");
+			$("#step-desc").text("전체 4단계 중 현재 1단계 "+titStr+" 선택 진행 중");
+			//$.each(arr, function (index, value) {
+			//});
+		}
+		function fncGetCourceDepthData(searchTypeVal, depthID) {
+			var dataset_id="co_2depth";
+			if(depthID == "co_1depth") {
+				dataset_id="co_2depth";
+			} else if(depthID == "co_2depth") {
+				dataset_id="co_3depth";
+			} else if(depthID == "co_3depth") {
+				dataset_id="co_4depth";
+			} else if(depthID == "co_4depth") {
+				dataset_id="hakwaResult";
+			}
+			//console.log(depthID+">>fncGetCourceDepthData searchTypeVal:"+searchTypeVal);
+			$("input[type=hidden][name=depthID]").val(depthID);
+			var depth1 = $("input[type=hidden][name=DEPTH1]").val();
+
+			if(searchTypeVal.indexOf("CAMPUS_0") == 0) {
+				$("input[type=hidden][name=setCampus]").val(searchTypeVal);
+			}
+			//P-TECH 링크처리
+			if(searchTypeVal == "CRCLM_00000000000122") {
+				var selCampus = $("input[type=hidden][name=setCampus]").val();
+				if(selCampus != "" && (depth1 == "AREA" || depth1 == "CAMPUS")) {
+					schPopup();
+					goResultUrl("PTECH", selCampus);
+					return;
+				}
+			}
+			$('#'+depthID+'-MO').parent().find('.label-box').text(selectLItxt);
+			if(depthID == "co_1depth") {
+				var arrVal;
+				if(searchTypeVal == "AREA") { setStepTitle(area_tit);
+				} else if(searchTypeVal == "CAMPUS") { setStepTitle(campus_tit);
+				} else if(searchTypeVal == "CRCLM") { setStepTitle(crclm_tit);
+				} else if(searchTypeVal == "AGE") { setStepTitle(age_tit);
+				} else if(searchTypeVal == "BUNYA") { setStepTitle(bunya_tit);}
+				
+				$("input[type=hidden][name=DEPTH1]").val(searchTypeVal);
+				$("input[type=hidden][name=searchType]").val(searchTypeVal);
+				$("input[type=hidden][name=setCampus]").val("");
+				$("input[type=hidden][name=DEPTH2]").val("");
+				$("input[type=hidden][name=DEPTH3]").val("");
+				$("input[type=hidden][name=DEPTH4]").val("");
+				if(searchTypeVal != "CAMPUS") {
+					setCourceDepthData(searchTypeVal, depthID, "", "", dataset_id);
+					return;
+				}
+			} else if(depthID == "co_2depth") {
+				$("input[type=hidden][name=DEPTH2]").val(searchTypeVal);
+				$("input[type=hidden][name=DEPTH3]").val("");
+				$("input[type=hidden][name=DEPTH4]").val("");
+				if(depth1 == "CAMPUS") {
+					setCourceDepthData("CRCLM", depthID, "", "", dataset_id);
+					return;
+				}
+			} else if(depthID == "co_3depth") {
+				$("input[type=hidden][name=DEPTH3]").val(searchTypeVal);
+				$("input[type=hidden][name=DEPTH4]").val("");
+
+			} else if(depthID == "co_4depth") {
+				$("input[type=hidden][name=DEPTH4]").val(searchTypeVal);
+				//P-TECH 링크처리
+				var depth1 = $("input[type=hidden][name=DEPTH1]").val();
+				var depth2 = $("input[type=hidden][name=DEPTH2]").val();
+				var depth3 = $("input[type=hidden][name=DEPTH3]").val();
+				var depth4 = $("input[type=hidden][name=DEPTH4]").val();
+				var crclmID = "";
+				if(depth2.indexOf("CRCLM_0") ==0) crclmID = depth2;
+				else if(depth3.indexOf("CRCLM_0") ==0) crclmID = depth3;
+				else if(depth4.indexOf("CRCLM_0") ==0) crclmID = depth4;
+				var campusID = "";
+				if(depth2.indexOf("CAMPUS_0") ==0) campusID = depth2;
+				else if(depth3.indexOf("CAMPUS_0") ==0) campusID = depth3;
+				else if(depth4.indexOf("CAMPUS_0") ==0) campusID = depth4;
+				//console.log(campusID+">>>>>>"+crclmID);
+
+				if(crclmID != "" && campusID != "") {
+					if(crclmID == "CRCLM_00000000000122") {//P-TECH
+						schPopup();
+						goResultUrl("PTECH", campusID);
+						return;
+					} else if(crclmID == "CRCLM_00000000000111") {//여성재취업
+						$('.wonseoUrl a').attr('href', "https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=42");
+						$('.ipsiUrl a').attr('href', goIpsiUrl(crclmID));
+						schPopup();
+						goResultUrl("wReJob", campusID);
+						return;
+					} else if(crclmID == "CRCLM_00000000000131") {//중장년재취업
+						$('.wonseoUrl a').attr('href', "https://ipsi.kopo.ac.kr/poly/wonseo/wonseoSearch.do?gwajeong_gb=41");
+						$('.ipsiUrl a').attr('href', goIpsiUrl(crclmID));
+						schPopup();
+						goResultUrl("jReJob", campusID);
+						return;
+					}
+				}
+			}
+			//$("input[type=hidden][name=searchType]").val(searchTypeVal);
+			//data : { searchType : searchTypeVal }
+			//console.log($("#cource_search").serialize() );
+			$("#"+dataset_id).empty();
+			$("#"+dataset_id+"-MO").empty();
+
+			$.ajax({
+				url : "/api/searchCourse.do"
+				, data : $("#cource_search").serialize() 
+				, dataType: 'json'
+				, success : function(res) {
+					//console.log(res);
+					if (res.data.resultCode == 0) {
+						setCourceDepthData(searchTypeVal, depthID, res.data, res.data.resultType, dataset_id);
+					}
+				}
+			});
+		}
+		//fncGetCampusOrgnztList("");
+
+		//데이타 채우기
+		function setCourceDepthData(searchTypeVal, depthID, dataList, resultType, dataset_id) {
+			/*
+			var dataset_id="co_2depth";
+			if(depthID == "co_1depth") {
+				dataset_id="co_2depth";
+			} else if(depthID == "co_2depth") {
+				dataset_id="co_3depth";
+			} else if(depthID == "co_3depth") {
+				dataset_id="co_4depth";
+			} else if(depthID == "co_4depth") {
+				dataset_id="hakwaResult";
+			}
+			*/
+			$('#'+dataset_id+'-MO').parent().find('.label-box').text("선택하세요");
+			
+			var courceData = "";
+			if(searchTypeVal == "AREA") {
+				courceData += '<li data-option="AREATY0100"><a href="#">수도권</a></li>';
+				courceData += '<li data-option="AREATY0200"><a href="#">강원도</a></li>';
+				courceData += '<li data-option="AREATY0300"><a href="#">충청도</a></li>';
+				courceData += '<li data-option="AREATY0400"><a href="#">전라도</a></li>';
+				courceData += '<li data-option="AREATY0510"><a href="#">경상북도</a></li>';
+				courceData += '<li data-option="AREATY0520"><a href="#">경상남도</a></li>';
+				courceData += '<li data-option="AREATY0600"><a href="#">제주도</a></li>';
+			} else if(searchTypeVal == "CRCLM") {
+				courceData += '<li data-option="D"><a href="#">학위취득 과정</a></li>';
+				courceData += '<li data-option="N"><a href="#">직업훈련 과정</a></li>';
+			} else if(searchTypeVal == "AGE") {
+				courceData += '<li data-option="CR1"><a href="#">고3진학예정자</a></li>';
+				courceData += '<li data-option="CR2"><a href="#">대학진학예정자</a></li>';
+				courceData += '<li data-option="CR3"><a href="#">대졸청년구직자</a></li>';
+				courceData += '<li data-option="CR4"><a href="#">구직자(만15세이상)</a></li>';
+				courceData += '<li data-option="CR5"><a href="#">재직(경력)자</a></li>';
+				courceData += '<li data-option="CR6"><a href="#">중장년(만40세이상)</a></li>';
+				courceData += '<li data-option="CR7"><a href="#">여성</a></li>';
+			} else if(searchTypeVal == "BUNYA") {
+				$("#"+dataset_id).empty();
+				$("#"+dataset_id).html($("#BUNYA_LIST").html());
+				$("#"+dataset_id+'-MO').empty();
+				$("#"+dataset_id+'-MO').html($("#BUNYA_LIST").html());
+				$('a,button').removeClass('last_btn');
+				$("#"+dataset_id).find('a,button').last().addClass('last_btn');
+				schPopup();
+				return;
+			} else {
+				//console.log(depthID:"+depthID+">>>resultType:"+resultType);
+				if(resultType == "campusList") {
+					$(dataList).each(function (i, item) {
+						//console.log(item);
+						//console.log("searchTypeVal:"+searchTypeVal);
+						if(searchTypeVal == "CRCLM_00000000000122") {//P-TECH
+							pteck_jsonData.forEach(function(data, idx){
+								courceData += '<li data-option="'+pteck_jsonData[idx].b+'"><a href="#" title="새창">'+pteck_jsonData[idx].a+'캠퍼스</a></li>';
+							});
+						} else if(searchTypeVal == "CRCLM_00000000000111") {//여성재취업
+							wReJob_jsonData.forEach(function(data, idx){
+								courceData += '<li data-option="'+wReJob_jsonData[idx].b+'"><a href="#" title="새창">'+wReJob_jsonData[idx].a+'캠퍼스</a></li>';
+							});
+						} else if(searchTypeVal == "CRCLM_00000000000131") {//중장년재취업
+							jReJob_jsonData.forEach(function(data, idx){
+								courceData += '<li data-option="'+jReJob_jsonData[idx].b+'"><a href="#" title="새창">'+jReJob_jsonData[idx].a+'캠퍼스</a></li>';
+							});
+						} else {
+							var depth1 = $("input[type=hidden][name=DEPTH1]").val();
+							var listLen = $(item.campusList).length;
+							$(item.campusList).each(function (i, item2) {
+								//console.log(listLen+":"+i);
+								var liCls = "";
+								if(depth1=="CAMPUS" && listLen == (i+1)) liCls = "pad-bo";
+								courceData += '<li data-option="'+item2.campusId+'" class="'+liCls+'"><a href="#">'+item2.campusNm+'</a></li>';
+							});
+						}
+					});
+				} else if(resultType == "courseList") {
+					$(dataList).each(function (i, item) {
+						//console.log(item);
+						$(item.courseList).each(function (i, item2) {
+							if(depthID == "co_4depth") {
+								//console.log(item2.courseNm);
+								item2.courseNm = item2.courseNm.replace(/\(.*/g,"");
+								item2.courseNm = $.trim(item2.courseNm);
+								item2.courseNm = item2.courseNm.replace(/공학과$/, '공학');
+								item2.courseNm = item2.courseNm.replace(/학과$/, '');
+								item2.courseNm = item2.courseNm.replace(/과$/, '');
+								if(item2.courseNm.length > 8) {
+									var inx = item2.courseNm.indexOf("기계설계");
+									if(inx > 0) {
+										item2.courseNm = item2.courseNm.substring(0,inx)+"<br/>"+"기계설계";
+									}
+									inx = item2.courseNm.indexOf("설비공학");
+									if(inx > 0) {
+										item2.courseNm = item2.courseNm.substring(0,inx)+"<br/>"+"설비공학";
+									}
+									if(item2.courseNm == "인공지능소프트웨어") {
+										item2.courseNm = "인공지능<br/>"+"소프트웨어";
+									}
+								}
+								//console.log(item2.courseNm);
+								if(item2.courseNm != "교양") {
+									courceData += '<li data-option="'+item2.menuNo+'">';
+									courceData += '<a href="/'+item2.campusNcnm+'/content.do?menu='+item2.menuNo+'" target="_blank" title="새창">';
+									courceData += item2.courseNm+'</a></li>';
+								}
+								$('.wonseoUrl a').attr('href', item2.crclmWurl);
+								$('.ipsiUrl a').attr('href', goIpsiUrl(item2.crclmId));
+							} else {
+								if(item2.crclmNm.indexOf("신중년") < 0) {
+									item2.crclmNm = item2.crclmNm.replace(/\(/g, '<br/>(');
+								}
+								item2.crclmNm = item2.crclmNm.replace("일반계고 직업교육 위탁과정","일반계고 직업교육<br/>위탁과정");
+								var newWinMsg = getNewWinMsg(item2.crclmId);
+								//console.log(item2.crclmNm+":"+item2.crclmId+":"+newWinMsg);
+								if(item2.crclmInfo != "") {
+									courceData += '<li data-option="'+item2.crclmId+'"><a href="#" '+newWinMsg+'>'+item2.crclmNm+"</a>";
+									courceData += '<button onclick="searchInfoPopupOpen(\'.pop01\', \''+item2.crclmInfo+'\', this); return false;" class="info-btn">설명</button></li>';
+								} else {
+									courceData += '<li data-option="'+item2.crclmId+'"><a href="#" '+newWinMsg+'>'+item2.crclmNm+'</a></li>';
+								}
+							}
+						});
+					});
+				}
+			}
+			
+			//console.log(courceData);
+			//console.log("dataset_id:"+dataset_id);
+			/*
+			if(dataset_id == "hakwaResult") {
+				$.each($("#co_4depth li"), function(index, item) {
+					var this_tit = $(this).attr("title");
+					if(this_tit == undefined) {
+						var crclmId = $(this).attr('data-option');
+						var newWin = getNewWinMsg(crclmId);
+						if(newWin == "title='새창'") {
+							$(this).attr("title", "새창");
+						}
+					}
+				});
+			}*/
+			if(courceData != "") {
+				$("#"+dataset_id).empty();
+				$("#"+dataset_id).html(courceData);
+				$("#"+dataset_id+"-MO").empty();
+				$("#"+dataset_id+"-MO").html(courceData);
+				$('a,button').removeClass('last_btn');
+				$("#"+dataset_id).find('a,button').last().addClass('last_btn');
+				schPopup();
+			} else {
+				$("#"+dataset_id).parent().removeClass("active");
+				$(".sch-pop .pc-visible .info-txt .txt").text("검색된 자료가 없습니다.");
+				//$("#"+dataset_id+"-MO").html("<li>검색자료 없음</li>");
+				$("#"+dataset_id+"-MO").parent().find(".label-box").text("검색자료 없음");
+			}
+		}	
+		function schPopup() {
+			// mobile
+			$(document).off("click").on("click", ".sch-pop .mo-visible .label-box", function () {
+				// label 활성화
+				$(this).parents('.depth').toggleClass("hover").siblings(".depth").removeClass("hover");
+			});
+			var selectLIval = "AREA";
+			// PC .pc-visible 
+			$(".sch-pop .btn-box:not(.style3) li a").off("click").on("click", function () {
+				// console.log($(this).find("button").hasClass("info-btn"));
+				var tagText = $(this).text().replace("설명","");
+				selectLItxt = tagText;
+				var depth = $(this).parents('.depth'),
+					depthLength = $('.sch-pop .pc-visible .depth').length;
+					depthNum = depth.index() + 1;
+					tagLength = $(".tag-wrap .tag").length;
+
+				// label 활성화
+				$(this).parent().addClass("active").siblings("li").removeClass("active");
+				
+				var this_tit = $(this).attr("title");
+				$.each($(this).parent('li').siblings().find('a'), function(index, item) {
+					var this_tit2 = $(this).attr("title");
+					if(this_tit2 != undefined) {
+						$(this).attr("title", this_tit2.replace("선택됨",""));
+					}
+				});
+				//console.log("this_tit:"+this_tit);
+				if(this_tit == undefined) {
+					this_tit = "";
+				}else if(this_tit == "title='새창'") {
+					this_tit = "새창 ";
+				} else {
+					this_tit += " ";
+				}
+				$(this).attr("title",this_tit + "선택됨");
+				//$(this).parent('li').siblings().find('a').removeAttr("title");
+				
+				// step box 활성화
+				$(".sch-pop .pc-visible .step-box li").eq(depth.index()).addClass("active").siblings("li").removeClass("active");
+				var stepText = $(".sch-pop .pc-visible .step-box li.active").text();
+				var stepIdx = $(".sch-pop .pc-visible .step-box li.active").index()+1;
+				$(".sch-pop .pc-visible .info-txt .txt").text(stepText+(isEndWithConsonant(stepText) ? "을" : "를")+" 선택해주세요!");
+				$("#step-desc").text("전체 4단계 중 현재 "+stepIdx+"단계 "+stepText+" 선택 진행 중");
+
+				// depth 활성화	
+				if (depthLength === depthNum) {
+					depth.next('.last-depth').addClass('active');
+				}else {
+					$('.last-depth').removeClass('active');
+				}
+				// console.log(">>>>>>>>>depthNum:"+depthNum+" tagText:"+tagText);
+				//console.log($(this).parent().attr('data-option'));
+				//console.log($(this).parents("li").eq(0).attr('data-option'));
+				selectLIval =  $(this).parents("li").eq(0).attr('data-option');
+				var select2depthID =  $(this).parents("ul").eq(0).attr('id');
+				select2depthID = select2depthID.replace("-MO","");
+
+				if(select2depthID == "co_1depth") {
+					if(selectLIval == "SANDAN") {
+						$(".depth").addClass("hidden");
+						$(".depth:first-child").removeClass("hidden");
+						$("#sandanResult").show();
+						$("#campusResult").hide();
+						$("#sandanResult-MO").show();
+						$("#campusResult-MO").hide();
+						depth.nextAll('.depth').removeClass('active');
+						$('.last-depth').addClass('active');
+						$('#'+select2depthID+'-MO').parent().find('.label-box').text(selectLItxt);
+						
+						// 산학협력교육과정 포커스
+						$('a,button').removeClass('last_btn2');
+						$("#sandanResult").find('a,button').last().addClass('last_btn2');
+
+						$('.close').off("keydown").on("keydown", function(event) { 
+							if (event.shiftKey && (event.keyCode || event.which) === 9) {
+								// Tab키 : 초점 받을 수 있는 첫번째 요소에서 마지막 요소로 초점 이동
+								event.preventDefault();
+								$('.last_btn2').focus();
+								
+							}
+						});
+						$('.last_btn2').off("keydown").on("keydown", function(event) {
+							if (!event.shiftKey && (event.keyCode || event.which) === 9) {
+								// Tab키 : 초점 받을 수 있는 마지막 요소에서 첫번째 요소로 초점 이동
+								event.preventDefault();
+								$('.close').focus();
+							}
+						});
+				
+					} else {
+						$('a,button').removeClass('last_btn2');
+						fncGetCourceDepthData(selectLIval, select2depthID);
+						$(".depth").removeClass("hidden");
+						$("#sandanResult").hide();
+						$("#campusResult").show();
+						$("#sandanResult-MO").hide();
+						//$("#campusResult-MO").show();
+						depth.next('.depth').addClass('active').nextAll('.depth').removeClass('active');
+					}
+
+				} else {
+					fncGetCourceDepthData(selectLIval, select2depthID);
+					depth.next('.depth').addClass('active').nextAll('.depth').removeClass('active');
+				}
+
+				// 태그추가
+				if (depth.index() < 1) {
+					$(".tag-wrap .placeholder").removeClass("hidden");
+					$(".tag-wrap .tag").remove();
+					$('.tag-wrap .tag').css('font-size', '2.5rem');
+				} else {
+					$(".tag-wrap .placeholder").addClass("hidden");
+					if(depth.index() < tagLength ) {
+						$(".tag-wrap .tag").eq(depth.index()-1).nextAll(".tag").remove();
+						$(".tag-wrap .tag").last().text(tagText);
+					}else if(depth.index() == tagLength){
+						$(".tag-wrap .tag").last().text(tagText);
+					}else {
+						$(".tag-wrap .ico-sch").before("<span class='tag'>"+tagText+"</span>");
+					}
+					var tagTextLen = $('.tag-wrap .tag').text().length + $('.tag-wrap .tag').length;
+					var fontSize = "2.5rem";
+					if(tagTextLen > 38) fontSize = "1.5rem";
+					else if(tagTextLen > 32) fontSize = "1.7rem";
+					else if(tagTextLen > 26) fontSize = "2rem";
+					$('.tag-wrap .tag').css('font-size', fontSize);
+				}		
+				//캠퍼스인 경우 : 캠퍼스별>해당캠퍼스 선택되게하기
+				if(curr_campusId != "" && curr_campusId.length == 20) {
+					var depth1 = $("input[type=hidden][name=DEPTH1]").val();
+					var depth2 = $("input[type=hidden][name=DEPTH2]").val();
+					setTimeout(function() {
+						if(depth1=="CAMPUS" && depth2=="") {
+							$("#co_2depth li").each(function(index, item){
+								//console.log(this);
+								if(curr_campusId == $(this).attr('data-option')) {
+									$(this).find("a").trigger("click");
+									setTimeout(function() {
+										var activeTop = $("#co_2depth li.active").position().top - 20;
+										$('.sch-pop .pc-visible>.contents .depth').animate({ scrollTop: activeTop});
+										curr_campusId = "";
+									}, 1100);	
+								}
+							});
+						}
+					}, 1000);
+				}
+			});
+			lpTabkeyboard();
+		}
+		var lastButton;
+		function lpTabkeyboard(){
+			if (windowWidth >= breakpoint) {
+				var lpObj = $('.sch-pop').find('.pc-visible');	
+			}
+			else {
+				var lpObj = $('.sch-pop').find('.mo-visible');	
+			}
+			
+			var firstButton = lpObj.find('.close');	
+			lastButton = lpObj.find('.last_btn').last();
+			//var last2First = lpObj.find('.focus_last a,.focus_last button').first();
+			//last2First.attr('tabindex','0');
+			//console.log(last2First);
+			if($(".last .btn-box2").is(':visible') && lastButton.text() == "설명") {
+				$('a,button').removeClass('last_btn');
+				$(".last .btn-box2").find('a,button').last().addClass('last_btn');
+				lastButton = lpObj.find('.last_btn').last();
+			}
+			//console.log("last button : "+lastButton.text());
+			
+			firstButton.off("keydown").on("keydown", function(event) { 
+			// 레이어 열리자마자 초점 받을 수 있는 첫번째 요소로 초점 이동
+				if (event.shiftKey && (event.keyCode || event.which) === 9) {
+					// Shift + Tab키 : 초점 받을 수 있는 첫번째 요소에서 마지막 요소로 초점 이동
+					event.preventDefault();
+					lastButton.focus();
+					
+				}
+			});
+			lastButton.off("keydown").on("keydown", function(event) {
+				// console.log("last button : "+lastButton.text());
+				// console.log("this button : "+$(this).text());
+				
+				if(lastButton.text() == $(this).text()) {
+					if (!event.shiftKey && (event.keyCode || event.which) === 9) {
+						// Tab키 : 초점 받을 수 있는 마지막 요소에서 첫번째 요소으로 초점 이동
+						//console.log("first button : "+firstButton.text());
+						event.preventDefault();
+						firstButton.focus();
+					}
+				}
+			});
+		}
+		$("#campusResult").show();
+		$("#sandanResult").hide();
+		schPopup();
+		//캠퍼스인 경우 : 캠퍼스별>해당캠퍼스 선택되게하기
+		if(curr_campusId != "" && curr_campusId.length == 20) {
+			$("#co_1depth li:nth-of-type(2) a").trigger("click");
+		} else {
+			$("#co_1depth li a:first").trigger("click");
+		}
+
+	});
+</script>
+
+
+<script>
+//P-TECH 산단 URL가져오기
+var ptechArray = new Array(
+	{a:'서울정수',b:'CAMPUS_0000000000011',c:'/jungsu/contents.do?key=107'},
+	{a:'서울강서',b:'CAMPUS_0000000000031',c:'/kangseo/contents.do?key=1606'},
+	{a:'성남',b:'CAMPUS_0000000000041',c:'/seongnam/contents.do?key=1607'},
+	{a:'인천',b:'CAMPUS_0000000000052',c:'/incheon/contents.do?key=616'},
+	{a:'화성',b:'CAMPUS_0000000000055',c:'/hwaseong/contents.do?key=1608'},
+	{a:'춘천',b:'CAMPUS_0000000000056',c:'/chuncheon/contents.do?key=1563'},
+	{a:'청주',b:'CAMPUS_0000000000060',c:'/cheongju/contents.do?key=1614'},
+	{a:'아산',b:'CAMPUS_0000000000061',c:'/asan/contents.do?key=903'},
+	{a:'광주',b:'CAMPUS_0000000000064',c:'/gwangju/contents.do?key=1627'},
+	{a:'전북',b:'CAMPUS_0000000000065',c:'/jb/contents.do?key=1609'},
+	{a:'전남',b:'CAMPUS_0000000000066',c:'/jeonnam/contents.do?key=1630'},
+	{a:'익산',b:'CAMPUS_0000000000067',c:'/iksan/contents.do?key=966'},
+	{a:'순천',b:'CAMPUS_0000000000068',c:'/suncheon/contents.do?key=1632'},
+	{a:'대구',b:'CAMPUS_0000000000069',c:'/daegu/contents.do?key=1635'},
+	{a:'구미',b:'CAMPUS_0000000000070',c:'/gumi/contents.do?key=1610'},
+	{a:'창원',b:'CAMPUS_0000000000074',c:'/changwon/contents.do?key=1394'},
+	{a:'부산',b:'CAMPUS_0000000000075',c:'/busan/contents.do?key=1611'},
+	{a:'울산',b:'CAMPUS_0000000000076',c:'/ulsan/contents.do?key=1612'},
+	{a:'항공',b:'CAMPUS_0000000000081',c:'/kapc/contents.do?key=1647'},
+	{a:'반도체융합',b:'CAMPUS_0000000000053',c:'/semi/contents.do?key=559'}
+);
+//여성재취업과정 URL가져오기
+var wReJobArray = new Array(
+	{a:'서울정수',b:'CAMPUS_0000000000011',c:'/jungsu/content.do?menu=8437'},
+	{a:'서울강서',b:'CAMPUS_0000000000031',c:'/kangseo/content.do?menu=8422'},
+	{a:'제주',b:'CAMPUS_0000000000042',c:'/jeju/content.do?menu=8878'},
+	{a:'인천',b:'CAMPUS_0000000000052',c:'/incheon/board.do?menu=10046'},
+	{a:'남인천',b:'CAMPUS_0000000000054',c:'/namincheon/content.do?menu=8502'},
+	{a:'화성',b:'CAMPUS_0000000000055',c:'/hwaseong/content.do?menu=10139'},
+	{a:'춘천',b:'CAMPUS_0000000000056',c:'/chuncheon/content.do?menu=15113'},
+	{a:'원주',b:'CAMPUS_0000000000057',c:'/wonju/content.do?menu=8859'},
+	{a:'강릉',b:'CAMPUS_0000000000058',c:'/gangneung/content.do?menu=11689'},
+	{a:'대전',b:'CAMPUS_0000000000059',c:'/daejeon/content.do?menu=8464'},
+	{a:'청주',b:'CAMPUS_0000000000060',c:'/cheongju/content.do?menu=8451'},
+	{a:'아산',b:'CAMPUS_0000000000061',c:'/asan/content.do?menu=8439'},
+	{a:'충남',b:'CAMPUS_0000000000062',c:'/chungnam/content.do?menu=13658'},
+	{a:'충주',b:'CAMPUS_0000000000063',c:'/chungju/content.do?menu=8534'},
+	{a:'광주',b:'CAMPUS_0000000000064',c:'/gwangju/content.do?menu=8440'},
+	{a:'전북',b:'CAMPUS_0000000000065',c:'/jb/content.do?menu=8879'},
+	{a:'익산',b:'CAMPUS_0000000000067',c:'/iksan/content.do?menu=8441'},
+	{a:'대구',b:'CAMPUS_0000000000069',c:'/daegu/content.do?menu=8459'},
+	{a:'구미',b:'CAMPUS_0000000000070',c:'/gumi/content.do?menu=10816'},
+	{a:'포항',b:'CAMPUS_0000000000072',c:'/pohang/content.do?menu=10095'},
+	{a:'영주',b:'CAMPUS_0000000000073',c:'/yeongju/content.do?menu=8460'},
+	{a:'창원',b:'CAMPUS_0000000000074',c:'/changwon/content.do?menu=8444'},
+	{a:'부산',b:'CAMPUS_0000000000075',c:'/busan/content.do?menu=8430'},
+	{a:'울산',b:'CAMPUS_0000000000076',c:'/ulsan/board.do?menu=3714#'},
+	{a:'동부산',b:'CAMPUS_0000000000077',c:'/dongbusan/content.do?menu=8431'},
+	{a:'진주',b:'CAMPUS_0000000000078',c:'/jinju/content.do?menu=8755'},
+	{a:'바이오',b:'CAMPUS_0000000000079',c:'/bio/content.do?menu=12279'},
+	{a:'항공',b:'CAMPUS_0000000000081',c:'/kapc/content.do?menu=8442'},
+	{a:'반도체융합',b:'CAMPUS_0000000000053',c:'/semi/content.do?menu=8438'}
+);
+//중장년재취업과정 URL가져오기 -> 2022.03.31 명칭변경됨 신중년특화과정(단기)
+var jReJobArray = new Array(
+	{a:'서울정수',b:'CAMPUS_0000000000011',c:'/jungsu/content.do?menu=8437'},
+	{a:'성남',b:'CAMPUS_0000000000041',c:'/seongnam/content.do?menu=8875'},
+	{a:'제주',b:'CAMPUS_0000000000042',c:'/jeju/content.do?menu=8878'},
+	{a:'인천',b:'CAMPUS_0000000000052',c:'/incheon/board.do?menu=10046'},
+	{a:'남인천',b:'CAMPUS_0000000000054',c:'/namincheon/content.do?menu=11729'},
+	{a:'화성',b:'CAMPUS_0000000000055',c:'/hwaseong/content.do?menu=8429'},
+	{a:'춘천',b:'CAMPUS_0000000000056',c:'/chuncheon/content.do?menu=14493'},
+	{a:'강릉',b:'CAMPUS_0000000000058',c:'/gangneung/content.do?menu=11746'},
+	{a:'대전',b:'CAMPUS_0000000000059',c:'/daejeon/content.do?menu=8464'},
+	{a:'청주',b:'CAMPUS_0000000000060',c:'/cheongju/content.do?menu=8451'},
+	{a:'아산',b:'CAMPUS_0000000000061',c:'/asan/content.do?menu=8439'},
+	{a:'광주',b:'CAMPUS_0000000000064',c:'/gwangju/content.do?menu=8440'},
+	{a:'익산',b:'CAMPUS_0000000000067',c:'/iksan/content.do?menu=8441'},
+	{a:'순천',b:'CAMPUS_0000000000068',c:'/suncheon/content.do?menu=8449'},
+	{a:'대구',b:'CAMPUS_0000000000069',c:'/daegu/content.do?menu=8459'},
+	{a:'구미',b:'CAMPUS_0000000000070',c:'/gumi/content.do?menu=11013'},
+	{a:'포항',b:'CAMPUS_0000000000072',c:'/pohang/content.do?menu=8501'},
+	{a:'영주',b:'CAMPUS_0000000000073',c:'/yeongju/content.do?menu=8460'},
+	{a:'창원',b:'CAMPUS_0000000000074',c:'/changwon/content.do?menu=8445'},
+	{a:'부산',b:'CAMPUS_0000000000075',c:'/busan/content.do?menu=8430'},
+	{a:'울산',b:'CAMPUS_0000000000076',c:'/ulsan/board.do?menu=3714#'},
+	{a:'진주',b:'CAMPUS_0000000000078',c:'/jinju/content.do?menu=8755'},
+	{a:'항공',b:'CAMPUS_0000000000081',c:'/kapc/content.do?menu=8442'}
+);
+var ipsiArray = new Array(
+	{a:'2년제학위과정',b:'CRCLM_00000000000011',c:'https://ipsi.kopo.ac.kr/poly/m_112/content.do'},
+	{a:'고숙련 일학습병행(P-TECH)과정',b:'CRCLM_00000000000122',c:'https://www.kopo.ac.kr/content.do?menu=11870'},
+	{a:'학위전공심화과정',b:'CRCLM_00000000000012',c:'https://ipsi.kopo.ac.kr/poly/m_113/content.do'},
+	{a:'전문기술과정',b:'CRCLM_00000000000014',c:'https://ipsi.kopo.ac.kr/poly/m_115/content.do'},
+	{a:'하이테크과정',b:'CRCLM_00000000000091',c:'https://ipsi.kopo.ac.kr/poly/m_116/content.do'},
+	{a:'일반계고직업교육 위탁과정',b:'CRCLM_00000000000101',c:'https://ipsi.kopo.ac.kr/poly/m_117/content.do'},
+	{a:'기능장과정',b:'CRCLM_00000000000016',c:'https://ipsi.kopo.ac.kr/poly/m_114/content.do'},
+	{a:'신중년특화과정',b:'CRCLM_00000000000102',c:'https://ipsi.kopo.ac.kr/poly/m_118/content.do'},
+	{a:'여성재취업',b:'CRCLM_00000000000111',c:'https://ipsi.kopo.ac.kr/poly/m_119/content.do'},
+	{a:'신중년특화과정(단기)',b:'CRCLM_00000000000131',c:'https://ipsi.kopo.ac.kr/poly/m_119/content.do'}
+);
+
+var pteck_jsonString = JSON.stringify(ptechArray);
+var pteck_jsonData = JSON.parse(pteck_jsonString);
+
+var wReJob_jsonData = JSON.parse(JSON.stringify(wReJobArray));
+var jReJob_jsonData = JSON.parse(JSON.stringify(jReJobArray));
+function goResultUrl(type, campusId) {
+	var goUrl = '#';
+	$("#hakwaResult").empty();
+	if(type == "wReJob") {
+		wReJob_jsonData.forEach(function(data, idx){
+			if(wReJob_jsonData[idx].b == campusId) {
+				goUrl = ""+wReJob_jsonData[idx].c;
+			}
+		});
+	} else if(type == "jReJob") {
+		jReJob_jsonData.forEach(function(data, idx){
+			if(jReJob_jsonData[idx].b == campusId) {
+				goUrl = ""+jReJob_jsonData[idx].c;
+			}
+		});
+	} else {
+		pteck_jsonData.forEach(function(data, idx){
+			if(pteck_jsonData[idx].b == campusId) {
+				goUrl = "https://sanhak.kopo.ac.kr"+pteck_jsonData[idx].c;
+			}
+		});
+	}
+	//location.href=goUrl;
+	if(goUrl == "#") {
+		var courceData='<li style="color: white;font-size: 1.3rem;">검색된 자료가 없습니다.</li>';
+		var dataset_id = "hakwaResult";
+		$("#"+dataset_id).empty();
+		$("#"+dataset_id).html(courceData);
+		$("#"+dataset_id+"-MO").empty();
+		$("#"+dataset_id+"-MO").html(courceData);
+
+		//$(".sch-pop .pc-visible .info-txt .txt").text("검색된 자료가 없습니다.");
+		//$("#hakwaResult	-MO").parent().find(".label-box").text("검색자료 없음");
+		//$(".sch-pop .pc-visible .info-txt").show();
+		//$("#campusResult").show();
+	} else {
+		window.open(goUrl);
+	}
+	//console.log(goUrl);
+}
+var ipsi_jsonString = JSON.stringify(ipsiArray);
+var ipsi_jsonData = JSON.parse(ipsi_jsonString);
+
+function goIpsiUrl(crclmId) {
+	var goUrl = '#';
+	ipsi_jsonData.forEach(function(data, idx){
+		if(ipsi_jsonData[idx].b == crclmId) {
+			goUrl = ipsi_jsonData[idx].c;
+		}
+	});
+	return goUrl;
+}
+function getNewWinMsg(crclmId) {
+	if(crclmId.indexOf("CRCLM_") != 0) {
+		return "";
+	}
+
+	var depth1 = $("input[type=hidden][name=DEPTH1]").val();
+	var depth2 = $("input[type=hidden][name=DEPTH2]").val();
+	var depth3 = $("input[type=hidden][name=DEPTH3]").val();
+	var newWinMsg = "";
+	if(crclmId == "CRCLM_00000000000122") {//P-TECH
+		var selCampus = $("input[type=hidden][name=setCampus]").val();
+		if(selCampus != "" && (depth1 == "AREA" || depth1 == "CAMPUS")) {
+			pteck_jsonData.forEach(function(data, idx){
+				if(pteck_jsonData[idx].b == selCampus) {
+					newWinMsg = "title='새창'";
+				}
+			});
+		}
+	} else if(crclmId == "CRCLM_00000000000111") {//여성재취업
+		var selCampus = $("input[type=hidden][name=setCampus]").val();
+		if(selCampus != "" && (depth1 == "AREA" || depth1 == "CAMPUS")) {
+			wReJob_jsonData.forEach(function(data, idx){
+				if(wReJob_jsonData[idx].b == selCampus) {
+					newWinMsg = "title='새창'";
+				}
+			});
+		}
+	} else if(crclmId == "CRCLM_00000000000131") {//중장년재취업과정
+		var selCampus = $("input[type=hidden][name=setCampus]").val();
+		if(selCampus != "" && (depth1 == "AREA" || depth1 == "CAMPUS")) {
+			jReJob_jsonData.forEach(function(data, idx){
+				if(jReJob_jsonData[idx].b == selCampus) {
+					newWinMsg = "title='새창'";
+				}
+			});
+		}
+	}
+	return newWinMsg;
+}
+
+
+function popClose(e) {
+		$(e).addClass('hidden');
+		$(".bodyS").removeClass('pop-visible');
+		$('.process-sch').focus();
+		if (windowWidth >= breakpoint) {
+			$('body').off('scroll touchmove mousewheel');
+		}
+		else {
+			$('html').removeClass("hold");
+		}
+
+		// 팝업 버튼 초점이동
+		$('.btn-open').focus();
+	}
+
+	function popOpen(e) {
+		$(e).removeClass('hidden');
+		$(".bodyS").addClass('pop-visible');
+		
+		if (windowWidth >= breakpoint) {
+			$(e).find('.pc-visible .close').focus();
+			window.addEventListener('scroll touchmove mousewheel', function (event) {
+				event.preventDefault();
+				event.stopPropagation();
+				return false;
+			}, { 
+				passive: false 
+			});
+			var lpObj = $(e).find('.pc-visible');	
+		}
+		else {
+			$(e).find('.mo-visible .close').focus();
+			$('html').addClass("hold");
+			var lpObj = $(e).find('.mo-visible');	
+		}
+		// Esc키 : 레이어 닫기
+		$(document).on("keydown", function(event) {
+			var keyType = event.keyCode || event.which;
+		
+			if (keyType === 27 && !lpObj.parents('.sch-pop').hasClass("hidden")) {
+				lpObj.parents('.sch-pop').addClass('hidden');
+				$(".bodyS").removeClass('pop-visible');
+				// 설명 팝업 닫기
+				$(".modal-wrap").addClass('is-visible');
+				// 팝업 버튼 초점이동
+				$('.btn-open').focus();
+			}
+		});
+		
+	}
+</script>
+
+<script type="text/javascript" src="/assets2021/js/corp_script.js?v=3.2.5.10"></script>
+
+</body>
+
+</html> 
